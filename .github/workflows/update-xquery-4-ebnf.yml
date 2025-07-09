@@ -1,0 +1,64 @@
+name: Update XQuery4 EBNFs
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Use Node.js latest
+      uses: actions/setup-node@v4
+      with:
+        node-version: latest
+        cache: 'npm'
+    - run: npm ci
+    - name: Download XQuery 4 grammar
+      run: curl https://raw.githubusercontent.com/GuntherRademacher/rex-parser-generator/main/docs/sample-grammars/XQuery-40.ebnf > XQuery-40.ebnf
+    - name: Apply changes on XQuery 4 grammar
+      run: node --experimental-strip-types ./src/index.ts ./XQuery-40.ebnf > XQuery-40-full.ebnf
+
+    - name: detect changes to grammar
+      id: has-changes
+      run: |
+        git diff-files --quiet ./XQuery-40-full.ebnf;
+        if [[ $? -eq 0 ]]; then
+         	echo "::set-output name=has-diff::true"
+        else
+         	echo "::set-output name=has-diff::false"
+        fi
+
+    - name: Stop if the result is the same
+      if: steps.set_output.outputs.has-diff == 'false'
+      run: |
+        gh run cancel ${{ github.run_id }}
+        gh run watch ${{ github.run_id }}
+
+    - name: Add the new changes
+      run: git add ./XQuery-40-full.ebnf
+
+    - name: Install REx parser
+      run: |
+        git clone https://github.com/GuntherRademacher/rex-parser-generator.git;
+        cd rex-parser-generator;
+        rex/scripts/build-gpp.sh;
+        ls rex/build/bin
+
+    - run: pwd
+    - run: ls rex-parser-generator/rex/build/bin
+
+    - name: Run REx parser to make the new parser
+      run: ./rex-parser-generator/rex/build/bin/rex -lr 2 -typescript ./XQuery-40-full.ebnf
+
+    - name: Check everything in
+      run: git add ./XQuery-40-full.ts
+
+    - name: Make a branch and commit
+      run: |
+        BRANCH_NAME=feat/update-parser-`date +"%d-%m-%y"`
+        git config --global user.email "bot@elliat.nl"
+        git config --global user.name "Bot"
+        git checkout -b $BRANCH_NAME
+        git commit -m "feat(parser): update parser to the newest spec"
+        git push origin -u $BRANCH_NAME

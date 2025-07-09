@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "nodenext",
+		"strict": true,
+		"rewriteRelativeImportExtensions": true,
+		"erasableSyntaxOnly": true,
+		"verbatimModuleSyntax": true,
+		"baseUrl": "./src/main.ts",
+		"outDir": "dist",
+		"allowImportingTsExtensions": true,
+		"declaration": true,
+		"lib": ["ESNext"]
+	},
+	"include": [
+		"./src/*"
+	]
+}
