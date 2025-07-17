@@ -49,7 +49,7 @@ jobs:
     - run: ls rex-parser-generator/rex/build/bin
 
     - name: Run REx parser to make the new parser
-      run: ./rex-parser-generator/rex/build/bin/rex -lr 2 -typescript ./XQuery-40-full.ebnf
+      run: ./rex-parser-generator/rex/build/bin/rex -lalr 2 -typescript ./XQuery-40-full.ebnf
 
     - name: Check everything in
       run: git add ./XQuery-40-full.ts

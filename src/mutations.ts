@@ -15,7 +15,7 @@ const existDBMutations: Mutation[] = [
 	{
 		where: 'Expr',
 		name: 'ExistDB_UpdateReplaceExpr',
-		additionalRules: [`ExistDB_UpdateReplaceExpr ::= 'update' 'replace' Expr with ExprSingle`],
+		additionalRules: [`ExistDB_UpdateReplaceExpr ::= 'update' 'replace' Expr 'with' ExprSingle`],
 	},
 	{
 		where: 'Expr',
