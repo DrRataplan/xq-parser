@@ -1,12 +1,18 @@
-import * as REx from './ebnfparser.ts';
+import {ParseException, Parser} from './ebnfparser.ts';
 import type { Mutation } from './mutations.ts';
-import { Handler, Node, NonTerminal, Terminal } from './parseEbnfToXml.ts';
+import { Handler, Node, NonTerminal, Terminal } from './parseEbnf.ts';
 
 export default function applyMutations(inputEbnf: string, mutations: Mutation[]): string {
 	const handler = new Handler();
-	const parser = new REx.Parser(inputEbnf, handler);
+	const parser = new Parser(inputEbnf, handler);
 
-	parser.parse_Grammar();
+	try {
+		parser.parse_Grammar();
+	} catch (err) {
+		if (err instanceof ParseException) {
+			throw new Error(`Parser error: ${parser.getErrorMessage(err)}`)
+		}
+	}
 
 	const result = handler.getResult();
 
@@ -48,5 +54,8 @@ export default function applyMutations(inputEbnf: string, mutations: Mutation[])
 		choice.children.unshift(new Terminal(mutation.name, -1, -1), new Terminal('|', -1, -1));
 	}
 
-	return result.toString();
+	return `<?pi?>
+${result.toString()}
+<?ENCORE?>
+<?pi?>`;
 }

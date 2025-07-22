@@ -23,6 +23,10 @@ export class Terminal extends Node {
 			return this.value + '\n';
 		}
 
+		if (this.value === '<?ENCORE?>') {
+			return this.value + '\n';
+		}
+
 		return this.value;
 	}
 }

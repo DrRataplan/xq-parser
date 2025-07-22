@@ -6,11 +6,21 @@ import mutations from './mutations.ts';
 import { readFile } from 'fs/promises';
 
 async function main(mainEbnfPath: string) {
-	const xquery4Ebnf = await readFile(mainEbnfPath, 'utf-8');
+	let xquery4Ebnf: string;
+	try {
+		xquery4Ebnf = await readFile(mainEbnfPath, 'utf-8');
+	} catch(err) {
+		console.log(`Error opening file ${mainEbnfPath}`, err)
+		process.exit(-1)
+	}
 
-	const result = applyMutations(xquery4Ebnf, mutations);
+	try {
+		const result = applyMutations(xquery4Ebnf, mutations);
 
-	console.log(result);
+		console.log(result);
+	} catch (err) {
+		console.error(`Error parsing ebnf`, err);
+	}
 }
 
 const mainEbnfPath = process.argv[2];

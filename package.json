@@ -6,8 +6,8 @@
     "ebnf-combinator": "dist/index.js"
   },
   "scripts": {
-    "test": "node --experimental-strip-types --test ./**/*.spec.ts",
-    "update-snapshots": "node --experimental-strip-types --test --test-update-snapshots ./**/*.spec.ts",
+    "test": "node --experimental-strip-types --test",
+    "update-snapshots": "node --experimental-strip-types --test --test-update-snapshots",
     "build": "tsc"
   },
   "author": "Martin Middel",
