@@ -47,6 +47,9 @@ export class NonTerminal extends Node {
 		if (this.name === 'SyntaxDefinition') {
 			return this.children.join('\n');
 		}
+		if (this.name === 'LexicalDefinition') {
+			return `\n${this.children.join('\n')}`;
+		}
 		return children.join(' ');
 	}
 }

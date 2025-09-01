@@ -6,26 +6,24 @@ export type Mutation = {
 
 const existDBMutations: Mutation[] = [
 	{
-		where: 'Expr',
-		name: 'ExistDB_UpdateInsertExpr',
+		where: 'ExprSingle',
+		name: 'ExistDB_UpdateExpr',
 		additionalRules: [
-			`ExistDB_UpdateInsertExpr ::= 'update' 'insert' Expr ( 'into' | 'following' | 'preceding' ) ExprSingle`,
+			`ExistDB_UpdateExpr ::= 'update' (ExistDB_UpdateInsertExpr | ExistDB_UpdateReplaceExpr | ExistDB_UpdateDeleteExpr | ExistDB_UpdateRenameExpr | ExistDB_UpdateValueExpr)`,
+			`ExistDB_UpdateInsertExpr ::= 'insert' Expr ( 'into' | 'following' | 'preceding' ) ExprSingle`,
+			`ExistDB_UpdateReplaceExpr ::= 'replace' Expr 'with' ExprSingle`,
+			`ExistDB_UpdateValueExpr ::= 'value' Expr 'with' ExprSingle`,
+			`ExistDB_UpdateDeleteExpr ::= 'delete' Expr`,
+			`ExistDB_UpdateRenameExpr ::= 'rename' Expr 'as' ExprSingle`,
 		],
 	},
+	// Also add these new keywords to the reserved names
 	{
-		where: 'Expr',
-		name: 'ExistDB_UpdateReplaceExpr',
-		additionalRules: [`ExistDB_UpdateReplaceExpr ::= 'update' 'replace' Expr 'with' ExprSingle`],
-	},
-	{
-		where: 'Expr',
-		name: 'ExistDB_UpdateDeleteExpr',
-		additionalRules: [`ExistDB_UpdateDeleteExpr ::= 'update' 'delete' ExprSingle`],
-	},
-	{
-		where: 'Expr',
-		name: 'ExistDB_UpdateRenameExpr',
-		additionalRules: [`ExistDB_UpdateRenameExpr ::= 'update' 'rename' Expr 'as' ExprSingle`],
+		where: 'ReservedName',
+		name: 'ExistDB_ReservedName',
+		additionalRules: [
+			`ExistDB_ReservedName::=  | 'update' | 'insert' | 'rename' | 'delete' | 'value' | 'into' | 'with'`,
+		],
 	},
 ];
 

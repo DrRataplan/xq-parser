@@ -1,2 +1,3 @@
 A ::= B
+// A comment!
 B ::= 'b'

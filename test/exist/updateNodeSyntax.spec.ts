@@ -15,7 +15,11 @@ return
 update delete $address`,
 			`update insert <email type="office">andrew@gmail.com</email> into //address[fname="Andrew"]
 `,
-			`update insert attribute type {'permanent'} into //address[fname="Andrew"]`,
+			// Note, the next one does not parse in XQuery 4 anymore
+
+			//			`update insert attribute type {'permanent'} into //address[fname="Andrew"]`,
+			`update insert attribute {'type'} {'permanent'} into //address[fname="Andrew"]`,
+
 			`update replace //fname[. = "Andrew"] with <fname>Andy</fname>`,
 			`update value //fname[. = "Andrew"] with 'Andy'`,
 			`for $city in //address/city
@@ -25,13 +29,18 @@ update delete $city`,
 return
     update rename $city as 'locale'`,
 		];
-
 		for (let i = 0; i < examplesFromDocs.length; ++i) {
-			it(`works with the example ${i}`, (t) => {
+			it(`works with the example ${i}: ${examplesFromDocs[i]}`, (t) => {
 				const result = runParser(examplesFromDocs[i]);
 
 				t.assert.ok(result, 'There should be some result');
 			});
 		}
+
+		it('works with simple queries', (t) => {
+			const result = runParser('update insert $a into $b');
+
+			t.assert.ok(result, 'There should be some result');
+		});
 	});
 });

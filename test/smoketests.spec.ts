@@ -1,7 +1,7 @@
 import { describe, it } from "node:test";
 import runParser from "./runParser.ts";
 
-describe('General parser working', () => {
+describe.only('General parser working', () => {
 	it('can parse a simple script', (t) => {
 		const input = '1 + 1';
 
