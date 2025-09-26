@@ -1,7 +1,7 @@
-// This file was generated on Mon Sep 1, 2025 14:43 (UTC+02) by REx v6.2-SNAPSHOT which is Copyright (c) 1979-2025 by Gunther Rademacher <grd@gmx.net>
-// REx command line: -typescript XQuery-40-full.ebnf -glalr 1 -a pi -tree
+// This file was generated on Mon Sep 1, 2025 15:33 (UTC+02) by REx v6.2-SNAPSHOT which is Copyright (c) 1979-2025 by Gunther Rademacher <grd@gmx.net>
+// REx command line: -typescript ./transformedgrammars/XQuery-40-full.ebnf -glalr 1 -a pi -tree
 
-                                                            // line 1 "XQuery-40-full.ebnf"
+                                                            // line 1 "./transformedgrammars/XQuery-40-full.ebnf"
 
                                                             // line 7 "XQuery-40-full.ts"
   export interface ParsingEventHandler
@@ -7478,7 +7478,7 @@
     }
   }
 
-                                                            // line 337 "XQuery-40-full.ebnf"
+                                                            // line 337 "./transformedgrammars/XQuery-40-full.ebnf"
 
                                                             // line 7484 "XQuery-40-full.ts"
 // End

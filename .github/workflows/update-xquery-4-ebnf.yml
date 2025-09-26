@@ -15,14 +15,14 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - name: Download XQuery 4 grammar
-      run: curl https://raw.githubusercontent.com/GuntherRademacher/rex-parser-generator/main/docs/sample-grammars/XQuery-40.ebnf > XQuery-40.ebnf
+      run: curl https://raw.githubusercontent.com/GuntherRademacher/rex-parser-generator/main/docs/sample-grammars/XQuery-40.ebnf > ./rawgrammars/XQuery-40.ebnf
     - name: Apply changes on XQuery 4 grammar
-      run: node --experimental-strip-types ./src/index.ts ./XQuery-40.ebnf > XQuery-40-full.ebnf
+      run: node --experimental-strip-types ./src/index.ts ./rawgrammars/XQuery-40.ebnf > transformedgrammars/XQuery-40-full.ebnf
 
     - name: detect changes to grammar
       id: has-changes
       run: |
-        git diff-files --quiet ./XQuery-40-full.ebnf;
+        git diff-files --quiet ./transformedgrammars/XQuery-40-full.ebnf;
         if [[ $? -eq 0 ]]; then
          	echo "::set-output name=has-diff::true"
         else
@@ -36,7 +36,9 @@ jobs:
         gh run watch ${{ github.run_id }}
 
     - name: Add the new changes
-      run: git add ./XQuery-40-full.ebnf
+      run: |
+        git add ./transformedgrammars/XQuery-40-full.ebnf;
+        git add ./rawgrammars/XQuery-40.ebnf
 
     - name: Install REx parser
       run: |
@@ -49,10 +51,12 @@ jobs:
     - run: ls rex-parser-generator/rex/build/bin
 
     - name: Run REx parser to make the new parser
-      run: ./rex-parser-generator/rex/build/bin/rex -lalr 2 -typescript ./XQuery-40-full.ebnf
+      run: |
+        ./rex-parser-generator/rex/build/bin/rex -lalr 2 -typescript ./transformedgrammars/XQuery-40-full.ebnf;
+        mv ./transformedgrammars/XQuery-40-full.ebnf ./parsers/XQuery-40-full.ts
 
     - name: Check everything in
-      run: git add ./XQuery-40-full.ts
+      run: git add ./parsers/XQuery-40-full.ts
 
     - name: Make a branch and commit
       run: |

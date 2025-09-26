@@ -39,30 +39,32 @@ export default function applyMutations(inputEbnf: string, mutations: Mutation[])
 	const lexicalDefinition = followPath(result, ['Grammar', 'LexicalDefinition'])[0];
 	const lexicalProductions = followPath(lexicalDefinition, ['LexicalProduction']);
 	for (const mutation of mutations) {
-		let isLexical = false;
-		let ruleToAmend = syntaxProductions.find((syntaxProduction) => {
-			const name = syntaxProduction.getChildren('Terminal')[0] as Terminal;
+		const isProduction = (production: NonTerminal) => {
+			const name = production.getChildren('Terminal')[0] as Terminal;
 
-			return name.value === mutation.where;
-		});
+			if (!Array.isArray(mutation.where)) {
+				return name.value === mutation.where;
+			}
+			return mutation.where.includes(name.value);
+		};
+
+		let isLexical = false;
+		let ruleToAmend = syntaxProductions.find(isProduction);
 		let choice = ruleToAmend?.getChildren('SyntaxChoice')[0] as NonTerminal;
 		if (!ruleToAmend) {
-			ruleToAmend = lexicalProductions.find((lexicalProduction) => {
-				const name = lexicalProduction.getChildren('Terminal')[0] as Terminal;
-
-				return name.value === mutation.where;
-			});
+			ruleToAmend = lexicalProductions.find(isProduction);
 			isLexical = true;
 			choice = ruleToAmend?.getChildren('ContextChoice')[0] as NonTerminal;
-
-			if (!ruleToAmend) {
-				console.error(
-					'No rule found to amend',
-					mutation.where,
-					lexicalProductions.map((x) => x.getChildren('Terminal')[0])
-				);
-				throw new Error();
-			}
+		}
+		if (!ruleToAmend) {
+			console.error(
+				'No rule found to amend',
+				mutation.where,
+				lexicalProductions
+					.concat(syntaxProductions)
+					.map((x) => (x.getChildren('Terminal')[0] as Terminal).value)
+			);
+			continue;
 		}
 
 		choice.children.unshift(

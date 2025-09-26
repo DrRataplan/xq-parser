@@ -1,5 +1,5 @@
 export type Mutation = {
-	where: string;
+	where: string | string[];
 	name: string;
 	additionalRules: string[];
 };
@@ -19,10 +19,10 @@ const existDBMutations: Mutation[] = [
 	},
 	// Also add these new keywords to the reserved names
 	{
-		where: 'ReservedName',
+		where: ['ReservedName'],
 		name: 'ExistDB_ReservedName',
 		additionalRules: [
-			`ExistDB_ReservedName::=  | 'update' | 'insert' | 'rename' | 'delete' | 'value' | 'into' | 'with'`,
+			`ExistDB_ReservedName::=  'update' | 'insert' | 'rename' | 'delete' | 'value' | 'into' | 'with'`,
 		],
 	},
 ];
