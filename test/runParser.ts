@@ -1,11 +1,18 @@
-import { ParseException, Parser } from '../XQuery-40-full.ts';
+import { ParseException as ParseException4, Parser as Parser4 } from '../parsers/XQuery-40-full.ts';
+import { ParseException as ParseException3, Parser as Parser3 } from '../parsers/XQuery-31-full.ts';
 import { Handler, Node } from '../src/parseEbnf.ts';
 
-export default function runParser(input: string): Node {
+export default function runParser(input: string, version: 3|4): Node {
+	const Parser = version === 4 ? Parser4 : Parser3
+	const ParseException = version === 4 ? ParseException4 : ParseException3;
 	const handler = new Handler();
 	const parser = new Parser(input, handler);
 	try {
-		parser.parse_Module();
+		if (version === 4) {
+			parser.parse_Module();
+		} else {
+			parser.parse_XQuery()
+		}
 	} catch (err) {
 		if (err instanceof ParseException) {
 			const begin = err.getBegin();

@@ -1,14 +1,12 @@
 {
-  "name": "ebnf-combinator",
+  "name": "xquery-parser",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "bin": {
-    "ebnf-combinator": "dist/index.js"
-  },
   "scripts": {
     "test": "node --experimental-strip-types --test",
     "update-snapshots": "node --experimental-strip-types --test --test-update-snapshots",
-    "build": "tsc"
+      "build": "tsc",
+	  "generate-parsers": "./generate-parsers.sh"
   },
   "author": "Martin Middel",
   "license": "MIT",

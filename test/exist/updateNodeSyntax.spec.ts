@@ -1,6 +1,6 @@
 import { describe, it } from 'node:test';
-import runParser from '../runParser.ts';
-
+import parsers from '../../parsers/index.ts';
+import assert from 'node:assert';
 describe('eXist-db update node syntax', () => {
 	describe('Examples from the docs', () => {
 		const examplesFromDocs = [
@@ -18,7 +18,7 @@ update delete $address`,
 			// Note, the next one does not parse in XQuery 4 anymore
 
 			//			`update insert attribute type {'permanent'} into //address[fname="Andrew"]`,
-			`update insert attribute {'type'} {'permanent'} into //address[fname="Andrew"]`,
+			`update insert attribute #type {'permanent'} into //address[fname="Andrew"]`,
 
 			`update replace //fname[. = "Andrew"] with <fname>Andy</fname>`,
 			`update value //fname[. = "Andrew"] with 'Andy'`,
@@ -27,20 +27,26 @@ return
 update delete $city`,
 			`for $city in //address/city
 return
-    update rename $city as 'locale'`,
+update rename $city as 'locale'`,
+			`update insert element div {} into /`,
 		];
-		for (let i = 0; i < examplesFromDocs.length; ++i) {
-			it(`works with the example ${i}: ${examplesFromDocs[i]}`, (t) => {
-				const result = runParser(examplesFromDocs[i]);
+		for (const parserName of Object.keys(parsers)) {
+			describe(`Using the parser ${parserName}`, () => {
+				const parser = parsers[parserName];
+				for (let i = 0; i < examplesFromDocs.length; ++i) {
+					it(`works with the example ${i}: ${examplesFromDocs[i]}`, () => {
+						const result = parser(examplesFromDocs[i]);
 
-				t.assert.ok(result, 'There should be some result');
+						assert.ok(result, 'There should be some result');
+					});
+				}
+
+				it('works with simple queries', (t) => {
+					const result = parser('update insert $a into $b');
+
+					assert.ok(result, 'There should be some result');
+				});
 			});
 		}
-
-		it('works with simple queries', (t) => {
-			const result = runParser('update insert $a into $b');
-
-			t.assert.ok(result, 'There should be some result');
-		});
 	});
 });
