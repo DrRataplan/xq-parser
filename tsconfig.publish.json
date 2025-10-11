@@ -5,6 +5,7 @@
 		"sourceMap": true,
 		"outDir": "dist"
 	},
+	"exclude": ["./src/*"],
 	"files": [
 		"./parsers/index.ts",
 		"./parsers/XQuery-31-full.ts",
