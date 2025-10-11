@@ -1,4 +1,5 @@
-// This file was generated on Mon Sep 1, 2025 15:33 (UTC+02) by REx v6.2-SNAPSHOT which is Copyright (c) 1979-2025 by Gunther Rademacher <grd@gmx.net>
+// @ts-nocheck
+// This file was generated on Sat Oct 11, 2025 10:53 (UTC+02) by REx v6.2-SNAPSHOT which is Copyright (c) 1979-2025 by Gunther Rademacher <grd@gmx.net>
 // REx command line: -typescript ./transformedgrammars/XQuery-40-full.ebnf -glalr 1 -a pi -tree
 
                                                             // line 1 "./transformedgrammars/XQuery-40-full.ebnf"

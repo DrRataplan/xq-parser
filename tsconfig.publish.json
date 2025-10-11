@@ -1,0 +1,13 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"sourceMap": true,
+		"outDir": "dist"
+	},
+	"files": [
+		"./parsers/index.ts",
+		"./parsers/XQuery-31-full.ts",
+		"./parsers/XQuery-40-full.ts"
+	]
+}
