@@ -332,6 +332,6 @@ NumericLiteralDelimiter \\ DecimalLiteral DoubleLiteral IntegerLiteral
 GeneralCompDelimiter \\ '<' ^GeneralComp
 DirElemConstructorDelimiter \\ '<' ^DirElemConstructor
 S \\ '(#'
-ExistDB_ReservedName ::=  | 'update' | 'insert' | 'rename' | 'delete' | 'value' | 'into' | 'with' 
+ExistDB_ReservedName ::= 'update' | 'insert' | 'rename' | 'delete' | 'value' | 'into' | 'with' 
 <?ENCORE?>
 <?pi?>

@@ -17,8 +17,10 @@ update delete $address`,
 `,
 			// Note, the next one does not parse in XQuery 4 anymore
 
-			//			`update insert attribute type {'permanent'} into //address[fname="Andrew"]`,
-			`update insert attribute #type {'permanent'} into //address[fname="Andrew"]`,
+			{
+				XQuery31Full: `update insert attribute type {'permanent'} into //address[fname="Andrew"]`,
+				XQuery4Full: `update insert attribute #type {'permanent'} into //address[fname="Andrew"]`,
+			},
 
 			`update replace //fname[. = "Andrew"] with <fname>Andy</fname>`,
 			`update value //fname[. = "Andrew"] with 'Andy'`,
@@ -34,8 +36,10 @@ update rename $city as 'locale'`,
 			describe(`Using the parser ${parserName}`, () => {
 				const parser = parsers[parserName];
 				for (let i = 0; i < examplesFromDocs.length; ++i) {
+					const example =
+						typeof examplesFromDocs[i] === 'string' ? examplesFromDocs[i] : examplesFromDocs[i][parserName];
 					it(`works with the example ${i}: ${examplesFromDocs[i]}`, () => {
-						const result = parser(examplesFromDocs[i]);
+						const result = parser(example);
 
 						assert.ok(result, 'There should be some result');
 					});
