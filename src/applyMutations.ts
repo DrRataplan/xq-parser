@@ -1,6 +1,32 @@
 import { ParseException, Parser } from './ebnfparser.ts';
 import type { Mutation } from './mutations.ts';
-import { Handler, Node, NonTerminal, Terminal } from './parseEbnf.ts';
+import { Handler, Node, NonTerminal, Terminal } from '../shared/parseEbnf.ts';
+
+function nodeToString(node: Terminal | NonTerminal): string {
+	if (node instanceof Terminal) {
+		if (node.value === '<?TOKENS?>') {
+			return node.value + '\n';
+		}
+
+		if (node.value === '<?ENCORE?>') {
+			return node.value + '\n';
+		}
+
+		return node.value;
+	}
+
+	const children = node.children.map((child) => child.toString());
+	if (node.type === 'Option' || node.type === 'CharClass' || node.type === 'EquivalenceCharRange') {
+		return node.children.map((child) => nodeToString(child)).join('');
+	}
+	if (node.type === 'SyntaxDefinition') {
+		return node.children.map((child) => nodeToString(child)).join('\n');
+	}
+	if (node.type === 'LexicalDefinition') {
+		return `\n${node.children.map((child) => nodeToString(child)).join('\n')}`;
+	}
+	return children.join(' ');
+}
 
 export default function applyMutations(inputEbnf: string, mutations: Mutation[]): string {
 	const handler = new Handler();
@@ -80,7 +106,12 @@ export default function applyMutations(inputEbnf: string, mutations: Mutation[])
 			try {
 				parser.parse_Grammar();
 			} catch (err) {
-				console.error('Changing the AST failed', parser.getErrorMessage(err));
+				if (err instanceof ParseException) {
+					console.error('Changing the AST failed', parser.getErrorMessage(err));
+					throw err;
+				}
+				console.error('Something failed', err);
+				throw err;
 			}
 
 			const newParseResult = handler.getResult();
@@ -95,7 +126,7 @@ export default function applyMutations(inputEbnf: string, mutations: Mutation[])
 	}
 
 	return `<?pi?>
-${result.toString()}
+${nodeToString(result)}
 <?ENCORE?>
 <?pi?>`;
 }

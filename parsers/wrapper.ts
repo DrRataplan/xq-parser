@@ -1,4 +1,5 @@
-import { Handler, Node } from '../src/parseEbnf.ts';
+import { Node } from '../shared/Node.ts';
+import Handler from '../shared/Handler.ts';
 
 // Locally declare the needed types so we can just ducktype them in when using them
 //const TParseMeth
@@ -6,7 +7,7 @@ type Parser<TParseMethod extends string> = {
 	/**
 	 * This is in practice either parse_Module or parse_Query
 	 */
-	[P in TParseMethod]: ()=> void;
+	[P in TParseMethod]: () => void;
 } & {
 	initialize(source: string, parsingEventHandler: BottomUpEventHandler): void;
 	getErrorMessage(e: ParseException): string;
@@ -20,7 +21,7 @@ type BottomUpEventHandler = {
 
 type ParseException = any;
 
-export type WrappedParser = (input: string) => Node
+export type WrappedParser = (input: string) => Node;
 
 export default function makeWrapper<TParseMethod extends string>(
 	ParserImpl: new (source: string, parsingEventHandler: BottomUpEventHandler) => Parser<TParseMethod>,

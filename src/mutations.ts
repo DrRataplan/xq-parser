@@ -17,14 +17,6 @@ const existDBMutations: Mutation[] = [
 			`ExistDB_UpdateRenameExpr ::= 'rename' Expr 'as' ExprSingle`,
 		],
 	},
-	// Also add these new keywords to the reserved names
-	{
-		where: ['ReservedName'],
-		name: 'ExistDB_ReservedName',
-		additionalRules: [
-			`ExistDB_ReservedName::=  'update' | 'insert' | 'rename' | 'delete' | 'value' | 'into' | 'with'`,
-		],
-	},
 ];
 
 export default existDBMutations;
