@@ -1,7 +1,8 @@
 {
-  "name": "xquery-parser",
-  "version": "1.0.0",
+  "name": "xq-parser",
+  "version": "0.1.0",
 	"main": "dist/index.js",
+	"files": ["dist/*"],
 	"exports": {
 		".": "./dist/parsers/index.js",
 		"./xquery4": "./dist/parsers/XQuery-40-full.js",
