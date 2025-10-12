@@ -43,7 +43,7 @@ export default function applyMutations(inputEbnf: string, mutations: Mutation[])
 		throw err;
 	}
 
-	const result = handler.getResult();
+	const result = handler.getResult().ast;
 
 	const followPath = (root: NonTerminal, parts: string[]): NonTerminal[] => {
 		const nodes = [root];
