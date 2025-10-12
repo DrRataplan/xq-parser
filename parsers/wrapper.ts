@@ -1,4 +1,4 @@
-import { Node } from '../shared/Node.ts';
+import { NonTerminal, Terminal, type Node } from '../shared/Node.ts';
 import Handler from '../shared/Handler.ts';
 
 // Locally declare the needed types so we can just ducktype them in when using them
@@ -21,14 +21,14 @@ type BottomUpEventHandler = {
 
 type ParseException = any;
 
-export type WrappedParser = (input: string) => Node;
+export type WrappedParser = (input: string) => { comments: Terminal[]; ast: NonTerminal };
 
 export default function makeWrapper<TParseMethod extends string>(
 	ParserImpl: new (source: string, parsingEventHandler: BottomUpEventHandler) => Parser<TParseMethod>,
 	parseMethod: TParseMethod,
 	ParseExceptionImpl: new (b: number, e: number, s: number, o: number, x: number) => ParseException
 ): WrappedParser {
-	const runParser = (input: string): Node => {
+	const runParser = (input: string) => {
 		const handler = new Handler();
 		const parser = new ParserImpl(input, handler);
 		try {
