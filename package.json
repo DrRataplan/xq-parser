@@ -3,9 +3,9 @@
   "version": "1.0.0",
 	"main": "dist/index.js",
 	"exports": {
-		".": "./dist/index.js",
-		"./xquery4": "./dist/XQuery-40-full.js",
-		"./xquery31": "./dist/XQuery-31-full.js"
+		".": "./dist/parsers/index.js",
+		"./xquery4": "./dist/parsers/XQuery-40-full.js",
+		"./xquery31": "./dist/parsers/XQuery-31-full.js"
 	},
   "scripts": {
     "test": "node --experimental-strip-types --test",
