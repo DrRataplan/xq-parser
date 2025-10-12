@@ -1,18 +1,20 @@
 {
   "name": "xq-parser",
-  "version": "0.1.0",
-	"main": "dist/index.js",
-	"files": ["dist/*"],
-	"exports": {
-		".": "./dist/parsers/index.js",
-		"./xquery4": "./dist/parsers/XQuery-40-full.js",
-		"./xquery31": "./dist/parsers/XQuery-31-full.js"
-	},
+  "version": "0.1.1",
+  "main": "dist/index.js",
+  "files": [
+    "dist/*"
+  ],
+  "exports": {
+    ".": "./dist/parsers/index.js",
+    "./xquery4": "./dist/parsers/XQuery-40-full.js",
+    "./xquery31": "./dist/parsers/XQuery-31-full.js"
+  },
   "scripts": {
     "test": "node --experimental-strip-types --test",
     "update-snapshots": "node --experimental-strip-types --test --test-update-snapshots",
     "build": "tsc --project ./tsconfig.publish.json",
-	"generate-parsers": "./generate-parsers.sh"
+    "generate-parsers": "./generate-parsers.sh"
   },
   "author": "Martin Middel",
   "license": "MIT",
