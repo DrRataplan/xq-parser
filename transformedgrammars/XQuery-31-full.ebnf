@@ -216,14 +216,14 @@ FunctionEQName ::= FunctionName | URIQualifiedName
 QName ::= FunctionName | 'array' | 'attribute' | 'comment' | 'document-node' | 'element' | 'empty-sequence' | 'function' | 'if' | 'item' | 'map' | 'namespace-node' | 'node' | 'processing-instruction' | 'schema-attribute' | 'schema-element' | 'switch' | 'text' | 'typeswitch'
 FunctionName ::= QName ^Token | 'ancestor' | 'ancestor-or-self' | 'and' | 'ascending' | 'case' | 'cast' | 'castable' | 'child' | 'collation' | 'count' | 'declare' | 'default' | 'descendant' | 'descendant-or-self' | 'descending' | 'div' | 'document' | 'else' | 'empty' | 'end' | 'eq' | 'every' | 'except' | 'following' | 'following-sibling' | 'for' | 'ge' | 'group' | 'gt' | 'idiv' | 'import' | 'instance' | 'intersect' | 'is' | 'le' | 'let' | 'lt' | 'mod' | 'module' | 'namespace' | 'ne' | 'only' | 'or' | 'order' | 'ordered' | 'parent' | 'preceding' | 'preceding-sibling' | 'return' | 'satisfies' | 'self' | 'some' | 'stable' | 'start' | 'to' | 'treat' | 'try' | 'union' | 'unordered' | 'validate' | 'where' | 'xquery'
 NCName ::= NCName ^Token | 'and' | 'ascending' | 'case' | 'cast' | 'castable' | 'collation' | 'count' | 'default' | 'descending' | 'div' | 'else' | 'empty' | 'end' | 'eq' | 'except' | 'for' | 'ge' | 'group' | 'gt' | 'idiv' | 'instance' | 'intersect' | 'is' | 'le' | 'let' | 'lt' | 'mod' | 'ne' | 'only' | 'or' | 'order' | 'return' | 'satisfies' | 'stable' | 'start' | 'to' | 'treat' | 'union' | 'where'
+ExistDB_UpdateExpr ::= 'update'  ( ExistDB_UpdateInsertExpr | ExistDB_UpdateReplaceExpr | ExistDB_UpdateDeleteExpr | ExistDB_UpdateRenameExpr | ExistDB_UpdateValueExpr )
+ExistDB_UpdateInsertExpr ::= 'insert'  Expr  ( 'into' | 'following' | 'preceding' )  ExprSingle
+ExistDB_UpdateReplaceExpr ::= 'replace'  Expr 'with'  ExprSingle
+ExistDB_UpdateValueExpr ::= 'value'  Expr 'with'  ExprSingle
+ExistDB_UpdateDeleteExpr ::= 'delete'  Expr
+ExistDB_UpdateRenameExpr ::= 'rename'  Expr  'as'  ExprSingle
 Whitespace ::= S ^WS | Comment /* ws: definition */
 Comment ::= '(:' ( CommentContents | Comment ) * ':)' /* ws: explicit */
-ExistDB_UpdateExpr ::= 'update' ( ExistDB_UpdateInsertExpr | ExistDB_UpdateReplaceExpr | ExistDB_UpdateDeleteExpr | ExistDB_UpdateRenameExpr | ExistDB_UpdateValueExpr )
-ExistDB_UpdateInsertExpr ::= 'insert' Expr ( 'into' | 'following' | 'preceding' ) ExprSingle
-ExistDB_UpdateReplaceExpr ::= 'replace' Expr 'with' ExprSingle
-ExistDB_UpdateValueExpr ::= 'value' Expr 'with' ExprSingle
-ExistDB_UpdateDeleteExpr ::= 'delete' Expr
-ExistDB_UpdateRenameExpr ::= 'rename' Expr 'as' ExprSingle
 <?TOKENS?>
 
 IntegerLiteral ::= Digits
