@@ -1,5 +1,6 @@
 import { NonTerminal, Terminal, type Node } from '../shared/Node.ts';
 import Handler from '../shared/Handler.ts';
+import { ParseTreeBuilder } from './XQuery-31-full.ts';
 
 // Locally declare the needed types so we can just ducktype them in when using them
 //const TParseMeth
@@ -37,8 +38,8 @@ export default function makeWrapper<TParseMethod extends string>(
 	ParseExceptionImpl: new (b: number, e: number, s: number, o: number, x: number) => ParseException
 ): WrappedParser {
 	const runParser = (input: string) => {
-		const handler = new Handler();
-		const parser = new ParserImpl(input, handler);
+		const ptb = new ParseTreeBuilder();
+		const parser = new ParserImpl(input, ptb);
 		try {
 			parser[parseMethod]();
 		} catch (err) {
@@ -59,7 +60,13 @@ export default function makeWrapper<TParseMethod extends string>(
 			});
 		}
 
-		return handler.getResult();
+		const handler = new Handler();
+
+		ptb.serialize(handler);
+		return {
+			comments: handler.comments,
+			ast: handler.root!,
+		};
 	};
 	return runParser;
 }

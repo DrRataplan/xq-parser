@@ -2,12 +2,14 @@ abstract class BaseNode {
 	public abstract readonly isTerminal: boolean;
 	public readonly type: string;
 	public readonly start: number;
-	public readonly end: number;
-	constructor(type: string, start: number, end: number) {
+	public end: number | null = null;
+	constructor(type: string, start: number, end?: number) {
 		this.type = type;
 
 		this.start = start;
-		this.end = end;
+		if (end !== undefined) {
+			this.end = end;
+		}
 	}
 }
 
@@ -35,7 +37,7 @@ export class NonTerminal extends BaseNode {
 	 * The children of this nonTerminal node
 	 */
 	public readonly children: (Terminal | NonTerminal)[] = [];
-	constructor(type: string, start: number, end: number) {
+	constructor(type: string, start: number, end?: number) {
 		super(type, start, end);
 	}
 	getChildren(type: string): Node[] {
