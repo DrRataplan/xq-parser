@@ -23,6 +23,14 @@ type ParseException = any;
 
 export type WrappedParser = (input: string) => { comments: Terminal[]; ast: NonTerminal };
 
+function offsetToCoords(text: string, offset: number) {
+	const before = text.substring(0, offset);
+	const lines = before.split('\n');
+	const line = lines.length;
+	const column = lines[lines.length - 1].length;
+	return { line, column };
+}
+
 export default function makeWrapper<TParseMethod extends string>(
 	ParserImpl: new (source: string, parsingEventHandler: BottomUpEventHandler) => Parser<TParseMethod>,
 	parseMethod: TParseMethod,
@@ -34,10 +42,21 @@ export default function makeWrapper<TParseMethod extends string>(
 		try {
 			parser[parseMethod]();
 		} catch (err) {
-			if (err instanceof ParseExceptionImpl) {
-				throw new Error(`Parser error: ${parser.getErrorMessage(err)}`);
+			if (!(err instanceof ParseExceptionImpl)) {
+				throw err;
 			}
-			throw err;
+
+			// Generate a nice syntax error
+			const start = offsetToCoords(input, err.getBegin());
+			const end = offsetToCoords(input, err.getBegin());
+
+			const prettierError = new SyntaxError(`${parser.getErrorMessage(err)} (${start.line}:${start.column})`);
+			throw Object.assign(prettierError, {
+				loc: {
+					start,
+					end,
+				},
+			});
 		}
 
 		return handler.getResult();
