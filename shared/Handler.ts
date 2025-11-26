@@ -1,14 +1,14 @@
-import type { BottomUpEventHandler } from '../parsers/XQuery-31-full.ts';
+import type { ParsingEventHandler } from '../parsers/XQuery-31-full.ts';
 import { NonTerminal, Terminal } from './Node.ts';
 import findCommentsInWhitespace from './findCommentsInWhitespace.ts';
 
-export default class Handler implements BottomUpEventHandler {
+export default class Handler implements ParsingEventHandler {
 	public root: NonTerminal | null = null;
-	public stack: NonTerminal[] = [];
 	public code: string = '';
 	public comments: Terminal[] = [];
 
-	scratchPad: (Terminal | NonTerminal)[] = [];
+	private stack: (Terminal | NonTerminal)[] = [];
+
 	constructor() {
 		this.reset('');
 	}
@@ -17,17 +17,22 @@ export default class Handler implements BottomUpEventHandler {
 		this.root = new NonTerminal('ROOT', 0, code.length);
 		this.stack = [this.root];
 		this.code = code;
-		this.scratchPad = [];
 		this.comments = [];
 	}
-	terminal(type: string, start: number, end: number) {
-		const value = this.code.substring(start, end);
-		const terminalNode = new Terminal(type, value, start, end);
-		this.scratchPad.push(terminalNode);
+	startNonterminal(type: string, start: number) {
+		const node = new NonTerminal(type, start);
+		const parent = this.peek();
+		parent.children.push(node);
+		this.stack.push(node);
 	}
-	nonterminal(type: string, start: number, end: number) {
-		const terminalNode = new NonTerminal(type, start, end);
-		this.scratchPad.push(terminalNode);
+	endNonterminal(_type: string, end: number) {
+		const nonTerminal = this.stack.pop()!;
+		nonTerminal.end = end;
+	}
+	terminal(type: string, start: number, end: number) {
+		const node = new Terminal(type, this.code.substring(start, end), start, end);
+		const parent = this.peek();
+		parent.children.push(node);
 	}
 
 	whitespace(begin: number, end: number) {
@@ -38,32 +43,7 @@ export default class Handler implements BottomUpEventHandler {
 		}
 	}
 
-	getResult(): { comments: Terminal[]; ast: NonTerminal } {
-		let previousEnd = 0;
-		for (const node of this.scratchPad.reverse()) {
-			if (node.isTerminal) {
-				if (previousEnd < node.start) {
-					// We passed whitespace
-					this.whitespace(previousEnd, node.start);
-					previousEnd = node.end;
-				}
-			}
-			let parent = this.peek();
-			while (parent.start > node.start) {
-				// We moved past the end of this node already
-				this.stack.pop();
-				parent = this.peek();
-				//				previousEnd = parent.end;
-			}
-			parent.children.unshift(node);
-			if (node instanceof NonTerminal) {
-				this.stack.push(node);
-			}
-		}
-		return { comments: this.comments, ast: this.root! };
-	}
-
 	peek(): NonTerminal {
-		return this.stack[this.stack.length - 1];
+		return this.stack[this.stack.length - 1] as NonTerminal;
 	}
 }
