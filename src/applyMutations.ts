@@ -1,6 +1,7 @@
 import { ParseException, Parser } from './ebnfparser.ts';
 import type { Mutation } from './mutations.ts';
-import { Handler, Node, NonTerminal, Terminal } from '../shared/parseEbnf.ts';
+import { Terminal, NonTerminal, type Node } from '../shared/Node.ts';
+import makeWrapper from '../parsers/wrapper.ts';
 
 function nodeToString(node: Terminal | NonTerminal): string {
 	if (node instanceof Terminal) {
@@ -15,7 +16,6 @@ function nodeToString(node: Terminal | NonTerminal): string {
 		return node.value;
 	}
 
-	const children = node.children.map((child) => child.toString());
 	if (node.type === 'Option' || node.type === 'CharClass' || node.type === 'EquivalenceCharRange') {
 		return node.children.map((child) => nodeToString(child)).join('');
 	}
@@ -25,25 +25,13 @@ function nodeToString(node: Terminal | NonTerminal): string {
 	if (node.type === 'LexicalDefinition') {
 		return `\n${node.children.map((child) => nodeToString(child)).join('\n')}`;
 	}
-	return children.join(' ');
+	return node.children.map((child) => nodeToString(child)).join(' ');
 }
 
 export default function applyMutations(inputEbnf: string, mutations: Mutation[]): string {
-	const handler = new Handler();
-	const parser = new Parser(inputEbnf, handler);
+	const wrapped = makeWrapper(Parser, 'parse_Grammar', ParseException);
 
-	try {
-		parser.parse_Grammar();
-	} catch (err) {
-		if (err instanceof ParseException) {
-			console.error(parser.getErrorMessage(err));
-			throw new Error(`Parser error: ${parser.getErrorMessage(err)}`);
-		}
-		console.error(err);
-		throw err;
-	}
-
-	const result = handler.getResult().ast;
+	const result = wrapped(inputEbnf).ast;
 
 	const followPath = (root: NonTerminal, parts: string[]): NonTerminal[] => {
 		const nodes = [root];
@@ -66,7 +54,7 @@ export default function applyMutations(inputEbnf: string, mutations: Mutation[])
 	const lexicalProductions = followPath(lexicalDefinition, ['LexicalProduction']);
 	for (const mutation of mutations) {
 		const isProduction = (production: NonTerminal) => {
-			const name = production.getChildren('Terminal')[0] as Terminal;
+			const name = production.getChildren('Name')[0] as Terminal;
 
 			if (!Array.isArray(mutation.where)) {
 				return name.value === mutation.where;
@@ -94,27 +82,14 @@ export default function applyMutations(inputEbnf: string, mutations: Mutation[])
 		}
 
 		choice.children.unshift(
-			new Terminal(mutation.name, -1, -1),
-			new Terminal('|', -1, -1),
-			new Terminal('(', -1, -1)
+			new Terminal('Terminal', mutation.name, -1, -1),
+			new Terminal('Terminal', '|', -1, -1),
+			new Terminal('Terminal', '(', -1, -1)
 		);
-		choice.children.push(new Terminal(')', -1, -1));
+		choice.children.push(new Terminal('Terminal', ')', -1, -1));
 
 		for (const additionalRule of mutation.additionalRules) {
-			parser.initialize(additionalRule, handler);
-
-			try {
-				parser.parse_Grammar();
-			} catch (err) {
-				if (err instanceof ParseException) {
-					console.error('Changing the AST failed', parser.getErrorMessage(err));
-					throw err;
-				}
-				console.error('Something failed', err);
-				throw err;
-			}
-
-			const newParseResult = handler.getResult();
+			const newParseResult = wrapped(additionalRule).ast;
 			const additionalRules = followPath(newParseResult, ['Grammar', 'SyntaxDefinition', 'SyntaxProduction']);
 
 			if (isLexical) {
