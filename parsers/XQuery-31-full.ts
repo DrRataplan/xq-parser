@@ -1,5 +1,5 @@
 // @ts-nocheck
-// This file was generated on Thu Mar 19, 2026 10:48 (UTC+01) by REx v6.2-SNAPSHOT which is Copyright (c) 1979-2025 by Gunther Rademacher <grd@gmx.net>
+// This file was generated on Thu Mar 19, 2026 12:51 (UTC+01) by REx v6.2-SNAPSHOT which is Copyright (c) 1979-2025 by Gunther Rademacher <grd@gmx.net>
 // REx command line: -typescript ./transformedgrammars/XQuery-31-full.ebnf -glalr 1 -a pi -tree
 
                                                             // line 1 "./transformedgrammars/XQuery-31-full.ebnf"
