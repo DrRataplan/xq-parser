@@ -7,7 +7,7 @@ LibraryModule ::= ModuleDecl Prolog
 ModuleDecl ::= 'module' 'namespace' NCName '=' URILiteral Separator
 Prolog ::= ( ( DefaultNamespaceDecl | Setter | NamespaceDecl | Import ) Separator ) * ( ( ContextItemDecl | AnnotatedDecl | OptionDecl ) Separator ) *
 Separator ::= ';'
-Setter ::= BoundarySpaceDecl | DefaultCollationDecl | BaseURIDecl | ConstructionDecl | OrderingModeDecl | EmptyOrderDecl | CopyNamespacesDecl | DecimalFormatDecl
+Setter ::= XQUF_RevalidationDecl | ( BoundarySpaceDecl | DefaultCollationDecl | BaseURIDecl | ConstructionDecl | OrderingModeDecl | EmptyOrderDecl | CopyNamespacesDecl | DecimalFormatDecl )
 BoundarySpaceDecl ::= 'declare' 'boundary-space' ( 'preserve' | 'strip' )
 DefaultCollationDecl ::= 'declare' 'default' 'collation' URILiteral
 BaseURIDecl ::= 'declare' 'base-uri' URILiteral
@@ -25,7 +25,7 @@ SchemaPrefix ::= 'namespace' NCName '=' | 'default' 'element' 'namespace'
 ModuleImport ::= 'import' 'module' ( 'namespace' NCName '=' ) ? URILiteral ( 'at' URILiteral ( ',' URILiteral ) * ) ?
 NamespaceDecl ::= 'declare' 'namespace' NCName '=' URILiteral
 DefaultNamespaceDecl ::= 'declare' 'default' ( 'element' | 'function' ) 'namespace' URILiteral
-AnnotatedDecl ::= 'declare' Annotation * ( VarDecl | FunctionDecl )
+AnnotatedDecl ::= XQUF_UpdatingFunctionDecl | ( XQUF_CompatibilityAnnotatedDecl | ( 'declare' Annotation * ( VarDecl | FunctionDecl ) ) )
 Annotation ::= '%' EQName ( '(' Literal ( ',' Literal ) * ')' ) ?
 VarDecl ::= 'variable' '$' VarName TypeDeclaration ? ( ':=' VarValue | 'external' ( ':=' VarDefaultValue ) ? )
 VarValue ::= ExprSingle
@@ -39,7 +39,7 @@ EnclosedExpr ::= '{' Expr ? '}'
 OptionDecl ::= 'declare' 'option' EQName StringLiteral
 QueryBody ::= Expr
 Expr ::= ExprSingle ( ',' ExprSingle ) *
-ExprSingle ::= ExistDB_UpdateExpr | ( FLWORExpr | QuantifiedExpr | SwitchExpr | TypeswitchExpr | IfExpr | TryCatchExpr | OrExpr )
+ExprSingle ::= XQUF_UpdateExpr | ( ExistDB_UpdateExpr | ( FLWORExpr | QuantifiedExpr | SwitchExpr | TypeswitchExpr | IfExpr | TryCatchExpr | OrExpr ) )
 FLWORExpr ::= InitialClause IntermediateClause * ReturnClause
 InitialClause ::= ForClause | LetClause | WindowClause
 IntermediateClause ::= InitialClause | WhereClause | GroupByClause | OrderByClause | CountClause
@@ -214,16 +214,37 @@ URILiteral ::= StringLiteral
 EQName ::= QName | URIQualifiedName
 FunctionEQName ::= FunctionName | URIQualifiedName
 QName ::= FunctionName | 'array' | 'attribute' | 'comment' | 'document-node' | 'element' | 'empty-sequence' | 'function' | 'if' | 'item' | 'map' | 'namespace-node' | 'node' | 'processing-instruction' | 'schema-attribute' | 'schema-element' | 'switch' | 'text' | 'typeswitch'
-FunctionName ::= QName ^Token | 'ancestor' | 'ancestor-or-self' | 'and' | 'ascending' | 'case' | 'cast' | 'castable' | 'child' | 'collation' | 'count' | 'declare' | 'default' | 'descendant' | 'descendant-or-self' | 'descending' | 'div' | 'document' | 'else' | 'empty' | 'end' | 'eq' | 'every' | 'except' | 'following' | 'following-sibling' | 'for' | 'ge' | 'group' | 'gt' | 'idiv' | 'import' | 'instance' | 'intersect' | 'is' | 'le' | 'let' | 'lt' | 'mod' | 'module' | 'namespace' | 'ne' | 'only' | 'or' | 'order' | 'ordered' | 'parent' | 'preceding' | 'preceding-sibling' | 'return' | 'satisfies' | 'self' | 'some' | 'stable' | 'start' | 'to' | 'treat' | 'try' | 'union' | 'unordered' | 'validate' | 'where' | 'xquery'
-NCName ::= NCName ^Token | 'and' | 'ascending' | 'case' | 'cast' | 'castable' | 'collation' | 'count' | 'default' | 'descending' | 'div' | 'else' | 'empty' | 'end' | 'eq' | 'except' | 'for' | 'ge' | 'group' | 'gt' | 'idiv' | 'instance' | 'intersect' | 'is' | 'le' | 'let' | 'lt' | 'mod' | 'ne' | 'only' | 'or' | 'order' | 'return' | 'satisfies' | 'stable' | 'start' | 'to' | 'treat' | 'union' | 'where'
-ExistDB_UpdateExpr ::= 'update'  ( ExistDB_UpdateInsertExpr | ExistDB_UpdateReplaceExpr | ExistDB_UpdateDeleteExpr | ExistDB_UpdateRenameExpr | ExistDB_UpdateValueExpr )
-ExistDB_UpdateInsertExpr ::= 'insert'  Expr  ( 'into' | 'following' | 'preceding' )  ExprSingle
-ExistDB_UpdateReplaceExpr ::= 'replace'  Expr 'with'  ExprSingle
-ExistDB_UpdateValueExpr ::= 'value'  Expr 'with'  ExprSingle
-ExistDB_UpdateDeleteExpr ::= 'delete'  Expr
-ExistDB_UpdateRenameExpr ::= 'rename'  Expr  'as'  ExprSingle
-Whitespace ::= S ^WS | Comment /* ws: definition */
+FunctionName ::= QName^Token | 'ancestor' | 'ancestor-or-self' | 'and' | 'ascending' | 'case' | 'cast' | 'castable' | 'child' | 'collation' | 'count' | 'declare' | 'default' | 'descendant' | 'descendant-or-self' | 'descending' | 'div' | 'document' | 'else' | 'empty' | 'end' | 'eq' | 'every' | 'except' | 'following' | 'following-sibling' | 'for' | 'ge' | 'group' | 'gt' | 'idiv' | 'import' | 'instance' | 'intersect' | 'is' | 'le' | 'let' | 'lt' | 'mod' | 'module' | 'namespace' | 'ne' | 'only' | 'or' | 'order' | 'ordered' | 'parent' | 'preceding' | 'preceding-sibling' | 'return' | 'satisfies' | 'self' | 'some' | 'stable' | 'start' | 'to' | 'treat' | 'try' | 'union' | 'unordered' | 'validate' | 'where' | 'xquery'
+NCName ::= NCName^Token | 'and' | 'ascending' | 'case' | 'cast' | 'castable' | 'collation' | 'count' | 'default' | 'descending' | 'div' | 'else' | 'empty' | 'end' | 'eq' | 'except' | 'for' | 'ge' | 'group' | 'gt' | 'idiv' | 'instance' | 'intersect' | 'is' | 'le' | 'let' | 'lt' | 'mod' | 'ne' | 'only' | 'or' | 'order' | 'return' | 'satisfies' | 'stable' | 'start' | 'to' | 'treat' | 'union' | 'where'
+Whitespace ::= S^WS | Comment /* ws: definition */
 Comment ::= '(:' ( CommentContents | Comment ) * ':)' /* ws: explicit */
+ExistDB_UpdateExpr ::= 'update' ExistDB_UpdateAction
+ExistDB_UpdateAction ::= ExistDB_UpdateInsertExpr | ExistDB_UpdateReplaceExpr | ExistDB_UpdateDeleteExpr | ExistDB_UpdateRenameExpr | ExistDB_UpdateValueExpr
+ExistDB_UpdateInsertExpr ::= 'insert' ExprSingle 'into' ExprSingle
+ExistDB_UpdateReplaceExpr ::= 'replace' ExprSingle 'with' ExprSingle
+ExistDB_UpdateValueExpr ::= 'value' ExprSingle 'with' ExprSingle
+ExistDB_UpdateDeleteExpr ::= 'delete' ExprSingle
+ExistDB_UpdateRenameExpr ::= 'rename' ExprSingle 'as' ExprSingle
+XQUF_UpdateExpr ::= XQUF_InsertExpr | XQUF_DeleteExpr | XQUF_ReplaceExpr | XQUF_RenameExpr | XQUF_TransformExpr | XQUF_UpdatingFunctionCall
+XQUF_InsertExpr ::= 'insert' ( 'node' | 'nodes' ) XQUF_SourceExpr XQUF_InsertExprTargetChoice XQUF_TargetExpr
+XQUF_InsertExprTargetChoice ::= 'into' | XQUF_AsFirstInto | XQUF_AsLastInto | 'after' | 'before'
+XQUF_AsFirstInto ::= 'as' 'first' 'into'
+XQUF_AsLastInto ::= 'as' 'last' 'into'
+XQUF_SourceExpr ::= ExprSingle
+XQUF_TargetExpr ::= ExprSingle
+XQUF_DeleteExpr ::= 'delete' ( 'node' | 'nodes' ) XQUF_TargetExpr
+XQUF_ReplaceExpr ::= 'replace' XQUF_ReplaceTarget 'with' XQUF_NewExpr
+XQUF_ReplaceTarget ::= 'value' 'of' 'node' XQUF_TargetExpr | 'node' XQUF_TargetExpr
+XQUF_NewExpr ::= ExprSingle
+XQUF_RenameExpr ::= 'rename' 'node' XQUF_TargetExpr 'as' XQUF_NewNameExpr
+XQUF_NewNameExpr ::= ExprSingle
+XQUF_TransformExpr ::= 'copy' XQUF_CopyBindingList 'modify' ExprSingle 'return' ExprSingle
+XQUF_CopyBindingList ::= XQUF_CopyBinding ( ',' XQUF_CopyBinding ) *
+XQUF_CopyBinding ::= '$' VarName ':=' ExprSingle
+XQUF_UpdatingFunctionCall ::= 'invoke' 'updating' ExprSingle ArgumentList
+XQUF_CompatibilityAnnotatedDecl ::= 'declare' 'updating' 'function' EQName '(' ParamList ? ')' ( 'as' SequenceType ) ? ( FunctionBody | 'external' )
+XQUF_RevalidationDecl ::= 'declare' 'revalidation' ( 'strict' | 'lax' | 'skip' )
+XQUF_UpdatingFunctionDecl ::= 'declare' 'updating' 'function' EQName '(' ParamList ? ')' ( 'as' SequenceType ) ? FunctionBody 
 <?TOKENS?>
 
 IntegerLiteral ::= Digits
@@ -263,9 +284,18 @@ EOF ::= $
 NonNCNameChar ::= $ | ':' | Char - NameChar
 DelimitingChar ::= NonNCNameChar | '-' | '.'
 DelimitingChar \\ DecimalLiteral DoubleLiteral IntegerLiteral
-NonNCNameChar \\ URIQualifiedName NCName ^Token QName ^Token 'NaN' 'allowing' 'ancestor' 'ancestor-or-self' 'and' 'array' 'as' 'ascending' 'at' 'attribute' 'base-uri' 'boundary-space' 'by' 'case' 'cast' 'castable' 'catch' 'child' 'collation' 'comment' 'construction' 'context' 'copy-namespaces' 'count' 'decimal-format' 'decimal-separator' 'declare' 'default' 'descendant' 'descendant-or-self' 'descending' 'digit' 'div' 'document' 'document-node' 'element' 'else' 'empty' 'empty-sequence' 'encoding' 'end' 'eq' 'every' 'except' 'exponent-separator' 'external' 'following' 'following-sibling' 'for' 'function' 'ge' 'greatest' 'group' 'grouping-separator' 'gt' 'idiv' 'if' 'import' 'in' 'infinity' 'inherit' 'instance' 'intersect' 'is' 'item' 'lax' 'le' 'least' 'let' 'lt' 'map' 'minus-sign' 'mod' 'module' 'namespace' 'namespace-node' 'ne' 'next' 'no-inherit' 'no-preserve' 'node' 'of' 'only' 'option' 'or' 'order' 'ordered' 'ordering' 'parent' 'pattern-separator' 'per-mille' 'percent' 'preceding' 'preceding-sibling' 'preserve' 'previous' 'processing-instruction' 'return' 'satisfies' 'schema' 'schema-attribute' 'schema-element' 'self' 'sliding' 'some' 'stable' 'start' 'strict' 'strip' 'switch' 'text' 'then' 'to' 'treat' 'try' 'tumbling' 'type' 'typeswitch' 'union' 'unordered' 'validate' 'variable' 'version' 'when' 'where' 'window' 'xquery' 'zero-digit' 'as'  'insert' 'update'
+NonNCNameChar \\ URIQualifiedName NCName^Token QName^Token 'NaN' 'allowing' 'ancestor' 'ancestor-or-self' 'and' 'array' 'as' 'ascending' 'at' 'attribute' 'base-uri' 'boundary-space' 'by' 'case' 'cast' 'castable' 'catch' 'child' 'collation' 'comment' 'construction' 'context' 'copy-namespaces' 'count' 'decimal-format' 'decimal-separator' 'declare' 'default' 'descendant' 'descendant-or-self' 'descending' 'digit' 'div' 'document' 'document-node' 'element' 'else' 'empty' 'empty-sequence' 'encoding' 'end' 'eq' 'every' 'except' 'exponent-separator' 'external' 'following' 'following-sibling' 'for' 'function' 'ge' 'greatest' 'group' 'grouping-separator' 'gt' 'idiv' 'if' 'import' 'in' 'infinity' 'inherit' 'instance' 'intersect' 'is' 'item' 'lax' 'le' 'least' 'let' 'lt' 'map' 'minus-sign' 'mod' 'module' 'namespace' 'namespace-node' 'ne' 'next' 'no-inherit' 'no-preserve' 'node' 'of' 'only' 'option' 'or' 'order' 'ordered' 'ordering' 'parent' 'pattern-separator' 'per-mille' 'percent' 'preceding' 'preceding-sibling' 'preserve' 'previous' 'processing-instruction' 'return' 'satisfies' 'schema' 'schema-attribute' 'schema-element' 'self' 'sliding' 'some' 'stable' 'start' 'strict' 'strip' 'switch' 'text' 'then' 'to' 'treat' 'try' 'tumbling' 'type' 'typeswitch' 'union' 'unordered' 'validate' 'variable' 'version' 'when' 'where' 'window' 'xquery' 'zero-digit' 'update' 'insert' 'delete' 'replace' 'rename' 'value' 'into' 'with' 'insert' 'delete' 'replace' 'rename' 'copy' 'modify' 'updating' 'revalidation' 'skip' 'value' 'of' 'into' 'before' 'after' 'first' 'last' 'with' 'node' 'nodes' 'invoke'
 '*' << Wildcard
-NCName ^Token << 'and' 'ascending' 'case' 'cast' 'castable' 'collation' 'count' 'default' 'descending' 'div' 'else' 'empty' 'end' 'eq' 'except' 'for' 'ge' 'group' 'gt' 'idiv' 'instance' 'intersect' 'is' 'le' 'let' 'lt' 'mod' 'ne' 'only' 'or' 'order' 'return' 'satisfies' 'stable' 'start' 'to' 'treat' 'union' 'where' 'as' 'following' 'preceding'
-QName ^Token << 'ancestor' 'ancestor-or-self' 'and' 'array' 'ascending' 'attribute' 'case' 'cast' 'castable' 'child' 'collation' 'comment' 'count' 'declare' 'default' 'descendant' 'descendant-or-self' 'descending' 'div' 'document' 'document-node' 'element' 'else' 'empty' 'empty-sequence' 'end' 'eq' 'every' 'except' 'following' 'following-sibling' 'for' 'function' 'ge' 'group' 'gt' 'idiv' 'if' 'import' 'instance' 'intersect' 'is' 'item' 'le' 'let' 'lt' 'map' 'mod' 'module' 'namespace' 'namespace-node' 'ne' 'node' 'only' 'or' 'order' 'ordered' 'parent' 'preceding' 'preceding-sibling' 'processing-instruction' 'return' 'satisfies' 'schema-attribute' 'schema-element' 'self' 'some' 'stable' 'start' 'switch' 'text' 'to' 'treat' 'try' 'typeswitch' 'union' 'unordered' 'validate' 'where' 'xquery' 'update' 'as' 'insert' 'update'
+NCName^Token << 'and' 'ascending' 'case' 'cast' 'castable' 'collation' 'count' 'default' 'descending' 'div' 'else' 'empty' 'end' 'eq' 'except' 'for' 'ge' 'group' 'gt' 'idiv' 'instance' 'intersect' 'is' 'le' 'let' 'lt' 'mod' 'ne' 'only' 'or' 'order' 'return' 'satisfies' 'stable' 'start' 'to' 'treat' 'union' 'where' 'with' 'copy' 'modify' 'after' 'before' 'first' 'last' 'node' 'nodes' 'of' 'updating' 'revalidation' 'skip' 'invoke'
+QName^Token << 'ancestor' 'ancestor-or-self' 'and' 'array' 'ascending' 'attribute' 'case' 'cast' 'castable' 'child' 'collation' 'comment' 'count' 'declare' 'default' 'descendant' 'descendant-or-self' 'descending' 'div' 'document' 'document-node' 'element' 'else' 'empty' 'empty-sequence' 'end' 'eq' 'every' 'except' 'following' 'following-sibling' 'for' 'function' 'ge' 'group' 'gt' 'idiv' 'if' 'import' 'instance' 'intersect' 'is' 'item' 'le' 'let' 'lt' 'map' 'mod' 'module' 'namespace' 'namespace-node' 'ne' 'node' 'only' 'or' 'order' 'ordered' 'parent' 'preceding' 'preceding-sibling' 'processing-instruction' 'return' 'satisfies' 'schema-attribute' 'schema-element' 'self' 'some' 'stable' 'start' 'switch' 'text' 'to' 'treat' 'try' 'typeswitch' 'union' 'unordered' 'validate' 'where' 'xquery' 'with' 'copy' 'modify' 'after' 'before' 'first' 'last' 'node' 'nodes' 'of' 'updating' 'revalidation' 'skip' 'invoke'
+'update' >> NCName^Token QName^Token
+'insert' >> NCName^Token QName^Token
+'delete' >> NCName^Token QName^Token
+'replace' >> NCName^Token QName^Token
+'rename' >> NCName^Token QName^Token
+'value' >> NCName^Token QName^Token
+'into' >> NCName^Token QName^Token
+'invoke' >> NCName^Token QName^Token
+'as' >> NCName^Token QName^Token 
 <?ENCORE?>
 <?pi?>

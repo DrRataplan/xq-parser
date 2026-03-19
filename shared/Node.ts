@@ -41,6 +41,9 @@ export class NonTerminal extends BaseNode {
 		super(type, start, end);
 	}
 	getChildren(type: string): Node[] {
+		if (type === '*') {
+			return this.children;
+		}
 		return this.children.filter((child) => child.type === type);
 	}
 }
