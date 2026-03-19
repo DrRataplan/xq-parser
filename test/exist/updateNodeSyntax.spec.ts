@@ -5,16 +5,16 @@ describe('eXist-db update node syntax', () => {
 	describe('Examples from the docs', () => {
 		const examplesFromDocs = [
 			`let $node := <root><a/></root>
-return
-update insert <b/> into $node/a`,
+			return
+			update insert <b/> into $node/a`,
 			`for $address in //address
-return
-update delete //address`,
+			return
+			update delete //address`,
 			`for $address in //address
-return
-update delete $address`,
+			return
+			update delete $address`,
 			`update insert <email type="office">andrew@gmail.com</email> into //address[fname="Andrew"]
-`,
+			`,
 			// Note, the next one does not parse in XQuery 4 anymore
 
 			{
@@ -28,8 +28,8 @@ update delete $address`,
 return
 update delete $city`,
 			`for $city in //address/city
-return
-update rename $city as 'locale'`,
+			return
+			update rename $city as 'locale'`,
 			`update insert element div {} into /`,
 		];
 		for (const parserName of Object.keys(parsers)) {
