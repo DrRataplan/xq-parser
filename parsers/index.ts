@@ -8,5 +8,5 @@ export const XQuery31Full = makeWrapper(XQuery31FullParser.Parser, 'parse_XQuery
 
 export default {
 	XQuery31Full,
-	//	XQuery4Full,
+	XQuery4Full,
 } as Record<string, WrappedParser>;

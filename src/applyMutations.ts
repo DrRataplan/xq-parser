@@ -244,13 +244,18 @@ export default function applyMutations(
 		if (qNamePref) qNamePref.children.push(makeStringNameOrString(`'${keyword}'`));
 	}
 
+	// Only generate >> preferences for grammars that use NCName^Token / QName^Token
+	// (XQuery 3.1 style). XQuery 4 uses ReservedName exclusion instead.
 	const ncNameToken = makeNameRef('NCName', 'Token');
 	const qNameToken = makeNameRef('QName', 'Token');
+	const hasTokenPreferences = preferences.some((p) => getDirectiveName(p) === 'NCName^Token');
 
-	for (const keyword of keywordsNeedingPriority) {
-		lexicalDefinition.children.push(
-			makePreferenceGT(makeStringNameOrString(`'${keyword}'`), [ncNameToken, qNameToken])
-		);
+	if (hasTokenPreferences) {
+		for (const keyword of keywordsNeedingPriority) {
+			lexicalDefinition.children.push(
+				makePreferenceGT(makeStringNameOrString(`'${keyword}'`), [ncNameToken, qNameToken])
+			);
+		}
 	}
 
 	return `<?pi?>
