@@ -1,29 +1,16 @@
+// Mutation: rewrites a syntax or lexical rule body by prepending a new
+// named alternative. Used for ExprSingle, NCName, FunctionName, etc.
 export type Mutation = {
 	where: string | string[];
 	name: string;
 	additionalRules: string[];
 };
 
-const existDBMutations: Mutation[] = [
-	{
-		where: 'ExprSingle',
-		name: 'ExistDB_UpdateExpr',
-		additionalRules: [
-			`ExistDB_UpdateExpr ::= 'update' (ExistDB_UpdateInsertExpr | ExistDB_UpdateReplaceExpr | ExistDB_UpdateDeleteExpr | ExistDB_UpdateRenameExpr | ExistDB_UpdateValueExpr)`,
-			`ExistDB_UpdateInsertExpr ::= 'insert' Expr ( 'into' | 'following' | 'preceding' ) ExprSingle`,
-			`ExistDB_UpdateReplaceExpr ::= 'replace' Expr 'with' ExprSingle`,
-			`ExistDB_UpdateValueExpr ::= 'value' Expr 'with' ExprSingle`,
-			`ExistDB_UpdateDeleteExpr ::= 'delete' Expr`,
-			`ExistDB_UpdateRenameExpr ::= 'rename' Expr 'as' ExprSingle`,
-		],
-	},
-	{
-		where: 'ReservedName',
-		name: 'ExistDB_ReservedName',
-		additionalRules: [
-			`ExistDB_ReservedName ::= 'update' | 'insert' | 'rename' | 'delete' | 'value' | 'into' | 'with'`,
-		],
-	},
-];
-
-export default existDBMutations;
+// TokenMutation: appends keyword strings directly to a token directive
+// production (NonNCNameChar \\, NCName^Token <<, QName^Token <<).
+// These directives are flat lists of terminals with no '|' operator,
+// so the standard Mutation wrapping of `name | ( ... )` is wrong for them.
+export type TokenMutation = {
+	where: string | string[];
+	tokens: string[];
+};
