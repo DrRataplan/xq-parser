@@ -1,7 +1,7 @@
 [
   {
     "testCase": "follows-415",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   }
 ]

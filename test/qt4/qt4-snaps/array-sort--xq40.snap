@@ -1,7 +1,6 @@
 [
   {
     "testCase": "array-sort-022",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   }
 ]

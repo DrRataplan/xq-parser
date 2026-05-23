@@ -1,12 +1,10 @@
 [
   {
     "testCase": "partition-016",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   },
   {
     "testCase": "partition-020",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   }
 ]

@@ -1,17 +1,14 @@
 [
   {
     "testCase": "K2-SeqExcept-39",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   },
   {
     "testCase": "K2-SeqExcept-40",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   },
   {
     "testCase": "except-100",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   }
 ]

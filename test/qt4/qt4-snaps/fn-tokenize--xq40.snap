@@ -1,27 +1,22 @@
 [
   {
     "testCase": "K2-TokenizeFunc-1",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   },
   {
     "testCase": "K2-TokenizeFunc-2",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   },
   {
     "testCase": "K2-TokenizeFunc-3",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   },
   {
     "testCase": "K2-TokenizeFunc-4",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   },
   {
     "testCase": "K2-TokenizeFunc-6",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   }
 ]

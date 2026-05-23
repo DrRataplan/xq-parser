@@ -1,12 +1,10 @@
 [
   {
     "testCase": "fn-jtree-006",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   },
   {
     "testCase": "fn-jtree-007",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   }
 ]

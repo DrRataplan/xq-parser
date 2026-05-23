@@ -1,22 +1,22 @@
 [
   {
     "testCase": "inline-fn-006",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   },
   {
     "testCase": "inline-fn-016",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   },
   {
     "testCase": "inline-fn-018",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   },
   {
     "testCase": "inline-fn-019",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   }
 ]

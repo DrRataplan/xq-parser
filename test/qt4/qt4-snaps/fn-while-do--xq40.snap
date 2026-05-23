@@ -1,12 +1,10 @@
 [
   {
     "testCase": "while-do-011",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   },
   {
     "testCase": "while-do-014",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   }
 ]

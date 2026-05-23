@@ -1,22 +1,20 @@
 [
   {
     "testCase": "WhileExpr020",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   },
   {
     "testCase": "WhileExpr027",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   },
   {
     "testCase": "K2-WhileExpr-1",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   },
   {
     "testCase": "cbcl-while-left-outer-join-004",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   }
 ]

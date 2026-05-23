@@ -1,12 +1,12 @@
 [
   {
     "testCase": "WhereExpr020",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   },
   {
     "testCase": "K2-WhereExpr-1",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   }
 ]

@@ -1,22 +1,22 @@
 [
   {
     "testCase": "PathExpr-5",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   },
   {
     "testCase": "PathExpr-7",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   },
   {
     "testCase": "PathExpr-8",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   },
   {
     "testCase": "PathExpr-9",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   }
 ]

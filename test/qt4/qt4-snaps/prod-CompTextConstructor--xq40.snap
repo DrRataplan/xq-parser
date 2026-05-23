@@ -1,7 +1,7 @@
 [
   {
     "testCase": "K2-ConText-5",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   }
 ]

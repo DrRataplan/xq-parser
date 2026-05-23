@@ -16,7 +16,7 @@ export interface TestOutput {
 	testSetSlug: string;
 	testCase: string;
 	grammar: Grammar;
-	outcome: 'pass' | 'false-positive' | 'false-negative';
+	outcome: 'pass' | 'parse-failed' | 'parse-succeeded';
 	expectedCode: string | null;
 }
 
@@ -37,11 +37,11 @@ if (!isMainThread) {
 		const outcome =
 			tc.expected === 'parse-error'
 				? parsed
-					? 'false-negative'
+					? 'parse-succeeded'
 					: 'pass'
 				: parsed
 					? 'pass'
-					: 'false-positive';
+					: 'parse-failed';
 		return {
 			testSetSlug: tc.testSetSlug,
 			testCase: tc.testCase,

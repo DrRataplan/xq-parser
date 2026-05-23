@@ -1,12 +1,10 @@
 [
   {
     "testCase": "K2-ComputeConElem-17",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   },
   {
     "testCase": "K2-ComputeConElem-25",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   }
 ]

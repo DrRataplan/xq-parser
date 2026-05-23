@@ -1,12 +1,10 @@
 [
   {
     "testCase": "xml-to-json-018",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   },
   {
     "testCase": "xml-to-json-019",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   }
 ]

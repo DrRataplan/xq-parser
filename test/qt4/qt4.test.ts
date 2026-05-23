@@ -201,7 +201,7 @@ if (QT4_DIR) {
 		const results = byKey.get(key) ?? [];
 		const failures = results
 			.filter((r) => r.outcome !== 'pass')
-			.map((r) => ({ testCase: r.testCase, outcome: r.outcome, expectedCode: r.expectedCode }));
+			.map((r) => ({ testCase: r.testCase, outcome: r.outcome, expectedCode: r.expectedCode ?? undefined }));
 		const snapPath = path.join(SNAP_DIR, `${key}.snap`);
 
 		test(`qt4/${key}`, async (t) => {

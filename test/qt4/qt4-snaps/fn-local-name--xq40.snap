@@ -1,12 +1,10 @@
 [
   {
     "testCase": "fn-local-name-56",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   },
   {
     "testCase": "fn-local-name-77",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   }
 ]

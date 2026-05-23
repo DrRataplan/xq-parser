@@ -1,7 +1,6 @@
 [
   {
     "testCase": "map-remove-021",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   }
 ]
