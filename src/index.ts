@@ -3,13 +3,14 @@
 import applyMutations from './applyMutations.ts';
 
 import { existDBMutations, existDBTokenMutations } from './exist-mutations.ts';
-import { xqufMutations, xqufTokenMutations } from './xquf-mutations.ts';
+import { xqufMutations, xqufTokenMutations, xqufFunctionNameKeywords } from './xquf-mutations.ts';
 
 import {
 	existDBTokenMutationsXQ4,
 	existDBMutationsXQ4,
 	xqufMutationsXQ4,
 	xqufTokenMutationsXQ4,
+	xqufFunctionNameKeywordsXQ4,
 } from './xq4/xquery4-transformations.ts';
 
 const xq31Mutations = [...existDBMutations, ...xqufMutations];
@@ -32,16 +33,19 @@ async function main(mainEbnfPath: string) {
 
 	let mutations: Mutation[];
 	let tokenMutations: TokenMutation[];
+	let functionNameKeywords: string[];
 	if (mainEbnfPath.endsWith('40.ebnf')) {
 		mutations = xq4Mutations;
 		tokenMutations = xq4TokenMutations;
+		functionNameKeywords = xqufFunctionNameKeywordsXQ4;
 	} else {
 		mutations = xq31Mutations;
 		tokenMutations = xq31TokenMutations;
+		functionNameKeywords = xqufFunctionNameKeywords;
 	}
 
 	try {
-		const result = applyMutations(xqueryEbnf, mutations, tokenMutations);
+		const result = applyMutations(xqueryEbnf, mutations, tokenMutations, functionNameKeywords);
 
 		console.log(result);
 	} catch (err) {
