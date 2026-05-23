@@ -117,8 +117,9 @@ function runInWorker(batch: TestInput[]): Promise<TestOutput[]> {
 const QT4_DIR = process.env.QT4_TESTS_DIR;
 const SNAP_DIR = path.join(import.meta.dirname, 'qt4-snaps');
 
-if (QT4_DIR) {
-	const catalogXml = fs.readFileSync(path.join(QT4_DIR, 'catalog.xml'), 'utf8');
+const catalogPath = QT4_DIR ? path.join(QT4_DIR, 'catalog.xml') : null;
+if (catalogPath && fs.existsSync(catalogPath)) {
+	const catalogXml = fs.readFileSync(catalogPath, 'utf8');
 	const catalogDoc = slimdom.parseXmlDocument(catalogXml);
 	const testSetFiles = Array.from(catalogDoc.getElementsByTagNameNS(NS, 'test-set'))
 		.map((el) => (el as slimdom.Element).getAttribute('file'))
