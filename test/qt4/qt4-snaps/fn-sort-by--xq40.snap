@@ -1,0 +1,17 @@
+[
+  {
+    "testCase": "fn-sort-by-spec-4",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-sort-by-spec-5",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-sort-by-spec-6",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

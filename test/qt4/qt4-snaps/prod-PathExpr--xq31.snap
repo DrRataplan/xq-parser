@@ -1,0 +1,22 @@
+[
+  {
+    "testCase": "PathExpr-5p",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "PathExpr-7p",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "PathExpr-8p",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "PathExpr-9p",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

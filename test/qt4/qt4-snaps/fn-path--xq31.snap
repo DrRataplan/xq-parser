@@ -1,0 +1,207 @@
+[
+  {
+    "testCase": "path011",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path012",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path013",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path040",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path041",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path042",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path043",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path044",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path045",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path046",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path047",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path048",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path049",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path050",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path051",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path052",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path053",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path054",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path055",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path056",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path057",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path058",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path059",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path060",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path061",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path062",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path063",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path064",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path065",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path066",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path101",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path103",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path104",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path105",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path106",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path107",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path108",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path109",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path110",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path111",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "path112",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

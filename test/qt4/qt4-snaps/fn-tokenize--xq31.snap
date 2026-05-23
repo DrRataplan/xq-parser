@@ -1,0 +1,7 @@
+[
+  {
+    "testCase": "K2-TokenizeFunc-6",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

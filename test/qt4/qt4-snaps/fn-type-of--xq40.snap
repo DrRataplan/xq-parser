@@ -1,0 +1,7 @@
+[
+  {
+    "testCase": "type-of-007",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

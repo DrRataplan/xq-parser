@@ -1,0 +1,17 @@
+[
+  {
+    "testCase": "map-for-each-410",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "map-for-each-411",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "map-for-each-412",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

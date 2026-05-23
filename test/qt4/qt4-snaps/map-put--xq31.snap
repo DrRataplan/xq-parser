@@ -1,0 +1,17 @@
+[
+  {
+    "testCase": "map-put-024",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "map-put-025",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "map-put-027",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

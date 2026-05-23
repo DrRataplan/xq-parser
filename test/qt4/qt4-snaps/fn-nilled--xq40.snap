@@ -1,0 +1,7 @@
+[
+  {
+    "testCase": "fn-nilled-2",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

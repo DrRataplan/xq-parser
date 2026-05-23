@@ -1,0 +1,7 @@
+[
+  {
+    "testCase": "map-keys-402",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

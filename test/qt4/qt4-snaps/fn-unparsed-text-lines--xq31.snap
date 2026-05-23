@@ -1,0 +1,22 @@
+[
+  {
+    "testCase": "fn-unparsed-text-lines-40-011",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-unparsed-text-lines-40-012",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-unparsed-text-lines-40-013",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-unparsed-text-lines-40-014",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

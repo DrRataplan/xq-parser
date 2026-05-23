@@ -1,0 +1,12 @@
+[
+  {
+    "testCase": "partition-016",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "partition-020",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

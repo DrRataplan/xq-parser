@@ -1,0 +1,192 @@
+[
+  {
+    "testCase": "MapConstructor-010a",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-011a",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-016a",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-025a",
+    "outcome": "false-negative",
+    "expectedCode": "XPST0003"
+  },
+  {
+    "testCase": "MapConstructor-401",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-402",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-403",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-404",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-405",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-406",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-408",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-409",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-410",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-411",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-412",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-413",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-414",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-415",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-420",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-421",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-422",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-423",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-424",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-425",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-426",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-450",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-451",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-452",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-453",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-454",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-456",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-500",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-501",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-502",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-503",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-504",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-505",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapConstructor-506",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

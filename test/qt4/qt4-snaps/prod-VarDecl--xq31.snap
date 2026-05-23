@@ -1,0 +1,17 @@
+[
+  {
+    "testCase": "K-InternalVariablesWith-50",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K-InternalVariablesWith-51",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K-InternalVariablesWith-52",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "testCase": "surrogates14",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "surrogates15",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "surrogates14a",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "surrogates15a",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "testCase": "fn-available-environment-variables-009",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

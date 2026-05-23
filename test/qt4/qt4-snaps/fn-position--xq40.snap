@@ -1,0 +1,12 @@
+[
+  {
+    "testCase": "position-4",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "position-5",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

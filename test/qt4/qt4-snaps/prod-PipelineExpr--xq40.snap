@@ -1,0 +1,7 @@
+[
+  {
+    "testCase": "pipeline-012",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

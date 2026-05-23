@@ -1,0 +1,7 @@
+[
+  {
+    "testCase": "fn-idref-4",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

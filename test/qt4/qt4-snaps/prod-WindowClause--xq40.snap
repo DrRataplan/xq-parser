@@ -1,0 +1,37 @@
+[
+  {
+    "testCase": "WindowingUseCase14",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowingUseCase14S",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "TumblingWindowExpr531",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "TumblingWindowExpr531a",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "TumblingWindowExpr532",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "TumblingWindowExpr533",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "TumblingWindowExpr536",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

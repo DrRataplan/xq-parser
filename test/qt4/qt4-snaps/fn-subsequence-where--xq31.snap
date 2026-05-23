@@ -1,0 +1,17 @@
+[
+  {
+    "testCase": "subsequence-after-007",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "subsequence-before-007",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "subsequence-ending-where-007",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

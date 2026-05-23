@@ -1,0 +1,7 @@
+[
+  {
+    "testCase": "array-sort-with-018",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

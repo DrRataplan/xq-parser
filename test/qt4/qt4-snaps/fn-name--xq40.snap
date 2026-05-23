@@ -1,0 +1,12 @@
+[
+  {
+    "testCase": "fn-name-6",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-name-27",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

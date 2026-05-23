@@ -1,0 +1,7 @@
+[
+  {
+    "testCase": "fn-function-lookup-616",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

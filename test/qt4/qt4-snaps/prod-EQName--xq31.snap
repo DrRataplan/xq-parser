@@ -1,0 +1,12 @@
+[
+  {
+    "testCase": "eqname-018",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "eqname-023",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

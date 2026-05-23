@@ -1,0 +1,12 @@
+[
+  {
+    "testCase": "currencysvg",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "RexParser",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

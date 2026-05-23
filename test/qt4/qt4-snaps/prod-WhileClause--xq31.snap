@@ -1,0 +1,27 @@
+[
+  {
+    "testCase": "WhileExpr021",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "cbcl-while-hash-join-005",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "cbcl-while-hash-join-006",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "cbcl-while-hash-join-007",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "cbcl-while-hash-join-008",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]
