@@ -53,4 +53,30 @@ update delete $city`,
 			});
 		}
 	});
+
+	describe('eXist keywords as function names', () => {
+		function findNode(node: any, type: string): boolean {
+			if (!node || typeof node !== 'object') return false;
+			if (node.type === type) return true;
+			return (node.children ?? []).some((c: any) => findNode(c, type));
+		}
+
+		for (const parserName of Object.keys(parsers) as (keyof typeof parsers)[]) {
+			describe(`Using the parser ${parserName}`, () => {
+				const parser = parsers[parserName];
+
+				it('parses update(1, 2) as a function call', () => {
+					const result = parser('update(1, 2)');
+					assert.ok(result, 'There should be some result');
+					assert.ok(findNode(result.ast, 'FunctionCall'), 'update(1,2) should parse as FunctionCall');
+				});
+
+				it('still parses update insert ... into ... as ExistDB_UpdateExpr', () => {
+					const result = parser('update insert $a into $b');
+					assert.ok(result, 'There should be some result');
+					assert.ok(findNode(result.ast, 'ExistDB_UpdateExpr'), 'Should parse as ExistDB_UpdateExpr');
+				});
+			});
+		}
+	});
 });

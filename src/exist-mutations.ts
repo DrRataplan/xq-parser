@@ -32,4 +32,10 @@ export const existDBMutations: Mutation[] = [
 	},
 ];
 
+// 'update' starts ExistDB_UpdateExpr directly in ExprSingle, so the GLALR
+// contextual lexer commits to the eXist path without forking into FunctionCall.
+// Adding it explicitly to FunctionName lets the parser fork and handle
+// update(arg1, arg2) as a user-defined function call.
+export const existDBFunctionNameKeywords: string[] = ['update'];
+
 export default existDBMutations;
