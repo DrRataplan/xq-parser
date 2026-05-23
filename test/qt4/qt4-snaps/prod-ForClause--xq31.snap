@@ -1,12 +1,12 @@
 [
   {
     "testCase": "K-ForExprWithout-57",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   },
   {
     "testCase": "K-ForExprWithout-58",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   }
 ]

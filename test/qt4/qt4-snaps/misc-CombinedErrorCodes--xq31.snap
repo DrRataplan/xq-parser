@@ -1,7 +1,7 @@
 [
   {
     "testCase": "typeswitch-in-xpath",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   }
 ]

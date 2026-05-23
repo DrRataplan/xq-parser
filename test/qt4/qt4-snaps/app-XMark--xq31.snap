@@ -1,7 +1,6 @@
 [
   {
     "testCase": "XMark-All",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   }
 ]

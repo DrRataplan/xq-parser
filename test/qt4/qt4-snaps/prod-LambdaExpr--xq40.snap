@@ -1,7 +1,7 @@
 [
   {
     "testCase": "lambda-fn-006",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   }
 ]

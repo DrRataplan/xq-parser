@@ -1,7 +1,6 @@
 [
   {
     "testCase": "characters-008",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   }
 ]

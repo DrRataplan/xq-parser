@@ -1,7 +1,6 @@
 [
   {
     "testCase": "fn-string-27",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   }
 ]

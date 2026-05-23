@@ -1,7 +1,7 @@
 [
   {
     "testCase": "K2-DirectConElem-53",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   }
 ]

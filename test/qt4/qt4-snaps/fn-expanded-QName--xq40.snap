@@ -1,7 +1,6 @@
 [
   {
     "testCase": "expanded-QName-004-XP",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   }
 ]

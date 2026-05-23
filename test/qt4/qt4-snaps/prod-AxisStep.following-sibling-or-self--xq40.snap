@@ -1,7 +1,7 @@
 [
   {
     "testCase": "following-sibling-or-self-36",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   }
 ]

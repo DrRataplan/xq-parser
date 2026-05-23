@@ -1,12 +1,11 @@
 [
   {
     "testCase": "typeswitch-union-in-xquery-10",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   },
   {
     "testCase": "typeswitch-40-001",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   }
 ]

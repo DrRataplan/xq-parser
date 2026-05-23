@@ -1,7 +1,6 @@
 [
   {
     "testCase": "fn-partial-apply-04",
-    "outcome": "false-positive",
-    "expectedCode": null
+    "outcome": "parse-failed"
   }
 ]

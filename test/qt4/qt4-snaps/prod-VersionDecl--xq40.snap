@@ -1,7 +1,7 @@
 [
   {
     "testCase": "version_declaration-023-v1",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   }
 ]

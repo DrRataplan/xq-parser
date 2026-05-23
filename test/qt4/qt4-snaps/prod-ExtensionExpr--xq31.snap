@@ -1,7 +1,7 @@
 [
   {
     "testCase": "K2-ExtensionExpression-18a",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   }
 ]

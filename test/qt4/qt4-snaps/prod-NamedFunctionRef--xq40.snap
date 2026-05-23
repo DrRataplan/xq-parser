@@ -1,7 +1,7 @@
 [
   {
     "testCase": "named-function-ref-reserved-function-names-005",
-    "outcome": "false-negative",
+    "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
   }
 ]
