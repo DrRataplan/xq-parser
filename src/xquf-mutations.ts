@@ -1,5 +1,13 @@
 import type { Mutation, TokenMutation } from './mutations.ts';
 
+// XQUF keywords that start update expressions but are also valid as function
+// names (e.g. fn:replace). They are hard keywords (in NonNCNameChar \\) so
+// the GLALR contextual lexer only enters the XQUF path unless they are also
+// explicitly listed as alternatives in FunctionName — at which point the
+// parser forks: one stack expects 'node'/'value' (XQUF), the other expects
+// '(' (FunctionCall). The wrong stack dies on the next token.
+export const xqufFunctionNameKeywords: string[] = ['insert', 'delete', 'replace', 'rename'];
+
 // Hard: go into NonNCNameChar \\ only — never valid as names in update context.
 const xqufHardKeywords: string[] = [
 	'insert',

@@ -1,5 +1,10 @@
 import type { Mutation, TokenMutation } from './mutations.ts';
 
+// XQUF keywords that start update expressions but are also valid as function
+// names. In XQuery 4 these must be added to UnreservedFunctionQName.
+// See xquf-mutations.ts for the rationale.
+export const xqufFunctionNameKeywordsXQ4: string[] = ['insert', 'delete', 'replace', 'rename'];
+
 // ─── eXist-DB mutations for XQuery 4 ─────────────────────────────────────────
 //
 // XQuery 4 differences from XQuery 3.1:

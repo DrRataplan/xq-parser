@@ -88,7 +88,8 @@ function makePreferenceGT(lhs: NonTerminal, rhs: NonTerminal[]): NonTerminal {
 export default function applyMutations(
 	inputEbnf: string,
 	mutations: Mutation[],
-	tokenMutations: TokenMutation[] = []
+	tokenMutations: TokenMutation[] = [],
+	functionNameKeywords: string[] = []
 ): string {
 	const wrapped = makeWrapper(Parser, 'parse_Grammar', ParseException);
 	const result = wrapped(inputEbnf).ast;
@@ -255,6 +256,36 @@ export default function applyMutations(
 			lexicalDefinition.children.push(
 				makePreferenceGT(makeStringNameOrString(`'${keyword}'`), [ncNameToken, qNameToken])
 			);
+		}
+	}
+
+	// ── FunctionName / UnreservedFunctionQName augmentation ──────────────────
+	//
+	// Add XQUF keywords that start update expressions (replace, insert, delete,
+	// rename) as explicit alternatives in the function-name production so the
+	// GLALR parser forks when it sees them at the start of ExprSingle:
+	//   • one stack enters XQUF_ReplaceExpr and expects 'node'/'value'
+	//   • the other enters FunctionCall and expects '('
+	// The wrong stack dies on the next token; no ambiguity survives.
+	//
+	// XQuery 3.1 uses FunctionName; XQuery 4 uses UnreservedFunctionQName.
+	if (functionNameKeywords.length > 0) {
+		const fnNameCandidates = ['FunctionName', 'UnreservedFunctionQName'];
+		for (const ruleName of fnNameCandidates) {
+			const prod = syntaxProductions.find((p) => {
+				const nameNode = p.getChildren('Name')[0] as Terminal;
+				return nameNode?.value === ruleName;
+			});
+			if (prod) {
+				const choice = prod.getChildren('SyntaxChoice')[0] as NonTerminal;
+				for (const keyword of functionNameKeywords) {
+					choice.children.push(
+						new Terminal('Terminal', '|', -1, -1),
+						makeStringNameOrString(`'${keyword}'`)
+					);
+				}
+				break;
+			}
 		}
 	}
 
