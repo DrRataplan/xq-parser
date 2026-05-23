@@ -6,7 +6,16 @@ import type { Mutation, TokenMutation } from './mutations.ts';
 // explicitly listed as alternatives in FunctionName — at which point the
 // parser forks: one stack expects 'node'/'value' (XQUF), the other expects
 // '(' (FunctionCall). The wrong stack dies on the next token.
-export const xqufFunctionNameKeywords: string[] = ['insert', 'delete', 'replace', 'rename'];
+// 'copy' and 'invoke' also start XQUF top-level expressions (XQUF_TransformExpr
+// and XQUF_UpdatingFunctionCall) so they need the same GLALR-fork treatment.
+export const xqufFunctionNameKeywords: string[] = [
+	'insert',
+	'delete',
+	'replace',
+	'rename',
+	'copy',
+	'invoke',
+];
 
 // Hard: go into NonNCNameChar \\ only — never valid as names in update context.
 const xqufHardKeywords: string[] = [

@@ -101,4 +101,47 @@ insert node attribute xsi:nil {"true"} into $q )`,
 			});
 		}
 	});
+
+	describe('XQUF keywords as function names', () => {
+		function findNode(node: any, type: string): boolean {
+			if (!node || typeof node !== 'object') return false;
+			if (node.type === type) return true;
+			return (node.children ?? []).some((c: any) => findNode(c, type));
+		}
+
+		const functionCallCases: [string, string][] = [
+			['replace(1, "a", "b")', 'replace'],
+			['insert(1, 2)', 'insert'],
+			['delete(1)', 'delete'],
+			['rename(1)', 'rename'],
+			['copy($x)', 'copy'],
+			['invoke($f)', 'invoke'],
+		];
+
+		for (const parserName of ['XQuery31Full', 'XQuery4Full'] as const) {
+			describe(`Using the parser ${parserName}`, () => {
+				const parser = parsers[parserName];
+
+				for (const [input, name] of functionCallCases) {
+					it(`parses ${name}(...) as a function call`, () => {
+						const result = parser(input);
+						assert.ok(result, 'There should be some result');
+						assert.ok(findNode(result.ast, 'FunctionCall'), `${input} should parse as FunctionCall`);
+					});
+				}
+
+				it('still parses replace node ... with ... as XQUF_ReplaceExpr', () => {
+					const result = parser('replace node $x with $y');
+					assert.ok(result, 'There should be some result');
+					assert.ok(findNode(result.ast, 'XQUF_ReplaceExpr'), 'Should parse as XQUF_ReplaceExpr');
+				});
+
+				it('still parses insert node ... into ... as XQUF_InsertExpr', () => {
+					const result = parser('insert node $a into $b');
+					assert.ok(result, 'There should be some result');
+					assert.ok(findNode(result.ast, 'XQUF_InsertExpr'), 'Should parse as XQUF_InsertExpr');
+				});
+			});
+		}
+	});
 });

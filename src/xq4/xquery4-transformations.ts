@@ -1,9 +1,39 @@
 import type { Mutation, TokenMutation } from './mutations.ts';
 
-// XQUF keywords that start update expressions but are also valid as function
-// names. In XQuery 4 these must be added to UnreservedFunctionQName.
-// See xquf-mutations.ts for the rationale.
-export const xqufFunctionNameKeywordsXQ4: string[] = ['insert', 'delete', 'replace', 'rename'];
+// In XQuery 3.1 the contextual GLALR lexer naturally allows XQUF/eXist soft
+// keywords (those in NCName^Token <<) to be used as function names when they
+// don't appear as the first token of any active expression.  In XQuery 4 the
+// static ReservedName exclusion prevents that: every keyword in ReservedName
+// is excluded from UnreservedQName, so it can never match UnreservedFunctionQName
+// via the UnreservedQName alternative.  We must list them explicitly.
+//
+// 'node' is intentionally omitted — it is a reserved XQuery function name
+// (KindTest constructor) and must not be callable as a user function.
+export const xqufFunctionNameKeywordsXQ4: string[] = [
+	// keywords that start XQUF expressions (same treatment as XQ3.1)
+	'insert',
+	'delete',
+	'replace',
+	'rename',
+	'copy',
+	'invoke',
+	// soft keywords in XQ3.1 (NCName^Token <<) but statically excluded in XQ4
+	'modify',
+	'before',
+	'after',
+	'first',
+	'last',
+	'nodes',
+	'updating',
+	'revalidation',
+	'skip',
+	'with',
+];
+
+// eXist-DB keywords that need the same treatment in XQ4.
+// 'update' starts ExistDB_UpdateExpr; 'into' is a soft eXist keyword that is
+// statically excluded from UnreservedQName by ExistDB_ReservedName.
+export const existDBFunctionNameKeywordsXQ4: string[] = ['update', 'into'];
 
 // ─── eXist-DB mutations for XQuery 4 ─────────────────────────────────────────
 //
