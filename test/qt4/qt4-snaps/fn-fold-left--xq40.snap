@@ -1,0 +1,7 @@
+[
+  {
+    "testCase": "fold-left-009",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

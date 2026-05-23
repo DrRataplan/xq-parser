@@ -1,0 +1,32 @@
+[
+  {
+    "testCase": "fn-innermost-017",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-innermost-018",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-innermost-019",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-innermost-020",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-innermost-021",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-innermost-022",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

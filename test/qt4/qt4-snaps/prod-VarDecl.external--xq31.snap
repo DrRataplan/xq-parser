@@ -1,0 +1,12 @@
+[
+  {
+    "testCase": "K2-ExternalVariablesWithout-18",
+    "outcome": "false-negative",
+    "expectedCode": "XPST0003"
+  },
+  {
+    "testCase": "extvardeclwithtype-23",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

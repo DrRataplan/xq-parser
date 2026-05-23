@@ -1,0 +1,92 @@
+[
+  {
+    "testCase": "K-ExtensionExpression-3",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K-ExtensionExpression-4",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K-ExtensionExpression-6",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K-ExtensionExpression-7",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K2-ExtensionExpression-1",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K2-ExtensionExpression-2",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K2-ExtensionExpression-3",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K2-ExtensionExpression-4",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K2-ExtensionExpression-5",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K2-ExtensionExpression-11",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K2-ExtensionExpression-12",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K2-ExtensionExpression-17",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K2-ExtensionExpression-18",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "pragma-no-namespace-001",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "pragma-no-namespace-002",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "pragma-no-namespace-003",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "pragma-no-namespace-004",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "pragma-no-namespace-005",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

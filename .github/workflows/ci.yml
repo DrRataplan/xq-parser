@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Use Node.js latest
+        uses: actions/setup-node@v4
+        with:
+          node-version: node
+          cache: npm
+
+      - run: npm ci
+
+      - name: Run tests
+        run: npm test
+        env:
+          QT4_TESTS_DIR: ${{ github.workspace }}/qt4tests

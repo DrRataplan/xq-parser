@@ -1,0 +1,79 @@
+name: Update QT4 testset
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'  # Every Monday at 09:00 UTC
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Use Node.js latest
+        uses: actions/setup-node@v4
+        with:
+          node-version: node
+          cache: npm
+
+      - run: npm ci
+
+      - name: Get current submodule commit
+        id: current
+        run: echo "sha=$(git -C qt4tests rev-parse HEAD)" >> $GITHUB_OUTPUT
+
+      - name: Get latest commit from qt4cg/qt4tests
+        id: latest
+        run: echo "sha=$(git ls-remote https://github.com/qt4cg/qt4tests.git refs/heads/main | cut -f1)" >> $GITHUB_OUTPUT
+
+      - name: Check if update needed
+        id: check
+        run: |
+          if [ "${{ steps.current.outputs.sha }}" = "${{ steps.latest.outputs.sha }}" ]; then
+            echo "needed=false" >> $GITHUB_OUTPUT
+          else
+            echo "needed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Update submodule to latest commit
+        if: steps.check.outputs.needed == 'true'
+        run: |
+          cd qt4tests
+          git fetch origin
+          git checkout ${{ steps.latest.outputs.sha }}
+          cd ..
+          git add qt4tests
+
+      - name: Regenerate snapshots
+        if: steps.check.outputs.needed == 'true'
+        run: |
+          QT4_TESTS_DIR=qt4tests node --experimental-strip-types --test --test-update-snapshots test/qt4/qt4.test.ts
+          git add test/qt4/qt4-snaps/
+
+      - name: Commit and open PR
+        if: steps.check.outputs.needed == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          SHORT="${{ steps.latest.outputs.sha }}"
+          SHORT="${SHORT:0:7}"
+          BRANCH="chore/update-qt4tests-${SHORT}"
+
+          git config --global user.email "bot@elliat.nl"
+          git config --global user.name "Bot"
+          git checkout -b "$BRANCH"
+          git commit -m "chore: update QT4 testset to ${SHORT}"
+          git push origin -u "$BRANCH"
+
+          EXISTING=$(gh pr list --head "$BRANCH" --json number --jq '.[0].number')
+          if [ -z "$EXISTING" ]; then
+            gh pr create \
+              --title "chore: update QT4 testset to ${SHORT}" \
+              --body "Updates qt4tests submodule to [\`${SHORT}\`](https://github.com/qt4cg/qt4tests/commit/${{ steps.latest.outputs.sha }})." \
+              --base main
+          fi

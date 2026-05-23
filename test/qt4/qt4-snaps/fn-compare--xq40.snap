@@ -1,0 +1,7 @@
+[
+  {
+    "testCase": "compare-QName-05",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

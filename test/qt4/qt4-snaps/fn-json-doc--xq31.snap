@@ -1,0 +1,7 @@
+[
+  {
+    "testCase": "json-doc-045",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

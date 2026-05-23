@@ -1,0 +1,27 @@
+[
+  {
+    "testCase": "K-SeqInsertBeforeFunc-17",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K-SeqInsertBeforeFunc-18",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K-SeqInsertBeforeFunc-19",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K-SeqInsertBeforeFunc-20",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K-SeqInsertBeforeFunc-21",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

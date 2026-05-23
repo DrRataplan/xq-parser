@@ -1,0 +1,37 @@
+[
+  {
+    "testCase": "eqname-018",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "eqname-023",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "eqname-040",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "eqname-041",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "eqname-042",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "eqname-043",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "eqname-914",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

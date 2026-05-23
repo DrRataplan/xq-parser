@@ -1,0 +1,122 @@
+[
+  {
+    "testCase": "WindowExprOptional1",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional2",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional3",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional4",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional5",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional6",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional7",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional8",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional9",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional10",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional11",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional14",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional15",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional16",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional17",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional18",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional19",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional20",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional21",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional22",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional23",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional24",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional25",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "WindowExprOptional26",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

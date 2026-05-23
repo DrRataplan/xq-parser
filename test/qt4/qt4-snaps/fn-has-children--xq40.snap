@@ -1,0 +1,12 @@
+[
+  {
+    "testCase": "fn-has-children-020",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-has-children-021",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

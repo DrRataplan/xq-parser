@@ -1,0 +1,22 @@
+[
+  {
+    "testCase": "LetExpr020a",
+    "outcome": "false-negative",
+    "expectedCode": "XPST0003"
+  },
+  {
+    "testCase": "LetExpr023",
+    "outcome": "false-negative",
+    "expectedCode": "XPST0003"
+  },
+  {
+    "testCase": "LetExpr024",
+    "outcome": "false-negative",
+    "expectedCode": "XPST0003"
+  },
+  {
+    "testCase": "let-arr-015a",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

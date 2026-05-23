@@ -1,0 +1,7 @@
+[
+  {
+    "testCase": "serialize-xml-012",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

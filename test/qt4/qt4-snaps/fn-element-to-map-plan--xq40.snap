@@ -1,0 +1,7 @@
+[
+  {
+    "testCase": "element-to-map-plan-700",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "testCase": "fn-local-name-77",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

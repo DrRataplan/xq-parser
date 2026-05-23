@@ -1,0 +1,12 @@
+[
+  {
+    "testCase": "fn-local-name-56",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-local-name-77",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

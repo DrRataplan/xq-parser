@@ -23,6 +23,7 @@
   "devDependencies": {
     "@types/node": "^24.0.12",
     "prettier": "^3.6.2",
+    "slimdom": "^4.3.5",
     "typescript": "^5.8.3"
   }
 }

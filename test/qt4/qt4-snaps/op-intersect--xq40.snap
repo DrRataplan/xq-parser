@@ -1,0 +1,12 @@
+[
+  {
+    "testCase": "K2-SeqIntersect-39",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K2-SeqIntersect-40",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

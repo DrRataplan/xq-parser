@@ -1,0 +1,7 @@
+[
+  {
+    "testCase": "fn-jposition-009",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

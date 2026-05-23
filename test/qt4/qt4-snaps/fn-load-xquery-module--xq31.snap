@@ -1,0 +1,22 @@
+[
+  {
+    "testCase": "fn-load-xquery-module-023a",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-load-xquery-module-401",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-load-xquery-module-402",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-load-xquery-module-403",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

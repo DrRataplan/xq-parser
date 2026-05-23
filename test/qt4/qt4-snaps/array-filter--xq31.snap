@@ -1,0 +1,27 @@
+[
+  {
+    "testCase": "array-filter-013",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "array-filter-014",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "array-filter-015",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "array-filter-401",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "array-filter-404",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

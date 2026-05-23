@@ -1,0 +1,17 @@
+[
+  {
+    "testCase": "nscons-045",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "nscons-046",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "nscons-048",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

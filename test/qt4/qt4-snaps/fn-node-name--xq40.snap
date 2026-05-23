@@ -1,0 +1,7 @@
+[
+  {
+    "testCase": "fn-node-name-2",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

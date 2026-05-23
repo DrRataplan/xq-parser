@@ -1,0 +1,17 @@
+[
+  {
+    "testCase": "K-SeqSubsequenceFunc-41",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K-SeqSubsequenceFunc-42",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K-SeqSubsequenceFunc-43",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

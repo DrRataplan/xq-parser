@@ -1,0 +1,42 @@
+[
+  {
+    "testCase": "fn-sort-by-spec-6",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-sort-by-collation-2",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-sort-by-collation-3",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-sort-by-collation-4",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-sort-by-collation-5",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-sort-by-collation-6",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-sort-by-collation-7",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "fn-sort-by-collation-8",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

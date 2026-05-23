@@ -1,0 +1,12 @@
+[
+  {
+    "testCase": "K2-ancestorAxis-12",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K2-ancestorAxis-21",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "testCase": "while-do-011",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "while-do-014",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

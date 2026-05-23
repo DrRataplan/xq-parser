@@ -1,0 +1,17 @@
+[
+  {
+    "testCase": "K2-ComputeConPI-14",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K2-ComputeConPI-15",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "K2-ComputeConPI-17",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

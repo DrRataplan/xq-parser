@@ -1,0 +1,32 @@
+[
+  {
+    "testCase": "map-merge-401",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "map-merge-403",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "map-merge-405",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "map-merge-406",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "map-merge-407",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "map-merge-408",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

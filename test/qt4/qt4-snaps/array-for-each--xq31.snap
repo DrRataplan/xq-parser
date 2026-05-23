@@ -1,0 +1,12 @@
+[
+  {
+    "testCase": "array-for-each-401",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "array-for-each-403",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "testCase": "MapType-072",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapType-080",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapType-081",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapType-082",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapType-083",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapType-084",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapType-085",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapType-086",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapType-087",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapType-088",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapType-090",
+    "outcome": "false-positive",
+    "expectedCode": null
+  },
+  {
+    "testCase": "MapType-092",
+    "outcome": "false-positive",
+    "expectedCode": null
+  }
+]
