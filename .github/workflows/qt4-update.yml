@@ -15,10 +15,10 @@ jobs:
           submodules: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Use Node.js latest
+      - name: Use Node.js 26
         uses: actions/setup-node@v4
         with:
-          node-version: node
+          node-version: 26
           cache: npm
 
       - run: npm ci
@@ -52,7 +52,7 @@ jobs:
       - name: Regenerate snapshots
         if: steps.check.outputs.needed == 'true'
         run: |
-          QT4_TESTS_DIR=qt4tests node --experimental-strip-types --test --test-update-snapshots test/qt4/qt4.test.ts
+          QT4_TESTS_DIR=qt4tests npm run update-snapshots
           git add test/qt4/qt4-snaps/
 
       - name: Commit and open PR
