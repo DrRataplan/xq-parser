@@ -3,9 +3,5 @@
     "testCase": "K2-ExternalVariablesWithout-18",
     "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
-  },
-  {
-    "testCase": "extvardeclwithtype-23",
-    "outcome": "parse-failed"
   }
 ]

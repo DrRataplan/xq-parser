@@ -1,10 +1,1 @@
-[
-  {
-    "testCase": "fn-jtree-006",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-jtree-007",
-    "outcome": "parse-failed"
-  }
-]
+[]

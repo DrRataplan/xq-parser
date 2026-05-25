@@ -3,9 +3,9 @@ import type { Mutation, TokenMutation } from './mutations.ts';
 // In XQuery 3.1 the contextual GLALR lexer naturally allows XQUF/eXist soft
 // keywords (those in NCName^Token <<) to be used as function names when they
 // don't appear as the first token of any active expression.  In XQuery 4 the
-// static ReservedName exclusion prevents that: every keyword in ReservedName
-// is excluded from UnreservedQName, so it can never match UnreservedFunctionQName
-// via the UnreservedQName alternative.  We must list them explicitly.
+// static Keyword exclusion prevents that: every keyword in Keyword
+// is excluded from NonKeywordQName, so it can never match UnreservedFunctionQName
+// via the NonKeywordQName alternative.  We must list them explicitly.
 //
 // 'node' is intentionally omitted — it is a reserved XQuery function name
 // (KindTest constructor) and must not be callable as a user function.
@@ -17,7 +17,7 @@ export const xqufFunctionNameKeywordsXQ4: string[] = [
 	'rename',
 	'copy',
 	'invoke',
-	// soft keywords in XQ3.1 (NCName^Token <<) but statically excluded in XQ4
+	// soft keywords in XQ3.1 (NCName^Token <<) but statically excluded in XQ4 via Keyword
 	'modify',
 	'before',
 	'after',
@@ -32,7 +32,7 @@ export const xqufFunctionNameKeywordsXQ4: string[] = [
 
 // eXist-DB keywords that need the same treatment in XQ4.
 // 'update' starts ExistDB_UpdateExpr; 'into' is a soft eXist keyword that is
-// statically excluded from UnreservedQName by ExistDB_ReservedName.
+// statically excluded from NonKeywordQName by ExistDB_ReservedName.
 export const existDBFunctionNameKeywordsXQ4: string[] = ['update', 'into'];
 
 // ─── eXist-DB mutations for XQuery 4 ─────────────────────────────────────────
@@ -43,12 +43,12 @@ export const existDBFunctionNameKeywordsXQ4: string[] = ['update', 'into'];
 //   • No NCName^Token << / QName^Token << — token system uses:
 //       QNameOrKeywordDelimiter \\ ...  (Delimiter node)
 //       NCNameDelimiter \\ UnreservedNCName  (Delimiter node)
-//   • ReservedName is an explicit lexical rule — add hard keywords here
+//   • Keyword is an explicit lexical rule — add hard keywords here
 //   • NCName rule body contains all soft keywords directly
 //   • No NonNCNameChar — use QNameOrKeywordDelimiter instead
-//   • >> preferences not needed — ReservedName exclusion handles it
+//   • >> preferences not needed — Keyword exclusion handles it
 
-// Hard keywords: add to QNameOrKeywordDelimiter \\ AND ReservedName rule body.
+// Hard keywords: add to QNameOrKeywordDelimiter \\ AND Keyword rule body.
 // These must never be usable as names.
 const existDBHardKeywords: string[] = ['insert', 'delete', 'replace', 'rename', 'value'];
 
@@ -63,16 +63,16 @@ export const existDBTokenMutationsXQ4: TokenMutation[] = [
 ];
 
 export const existDBMutationsXQ4: Mutation[] = [
-	// Add ALL eXist keywords to ReservedName so they are excluded from
-	// UnreservedQName (= QName - ReservedName). Without this, 'update' and
-	// 'with' remain valid UnreservedQName tokens and REX sees them as
+	// Add ALL eXist keywords to Keyword so they are excluded from
+	// NonKeywordQName (= QName - Keyword). Without this, 'update' and
+	// 'with' remain valid NonKeywordQName tokens and REX sees them as
 	// ambiguous with the keyword terminals.
-	// Being in ReservedName does NOT prevent use as NCName — the NCName rule
+	// Being in Keyword does NOT prevent use as NCName — the NCName rule
 	// body in XQuery 4 lists keywords explicitly as direct alternatives
 	// (bypassing UnreservedNCName), so adding them to ExistDB_NCName below
 	// keeps them valid as names.
 	{
-		where: 'ReservedName',
+		where: 'Keyword',
 		name: 'ExistDB_ReservedName',
 		additionalRules: [
 			`ExistDB_ReservedName ::= 'update' | 'insert' | 'delete' | 'replace' | 'rename' | 'value' | 'into' | 'with'`,
@@ -135,9 +135,9 @@ export const xqufTokenMutationsXQ4: TokenMutation[] = [
 ];
 
 export const xqufMutationsXQ4: Mutation[] = [
-	// All XQUF keywords go into ReservedName to exclude from UnreservedQName.
+	// All XQUF keywords go into Keyword to exclude from NonKeywordQName.
 	{
-		where: 'ReservedName',
+		where: 'Keyword',
 		name: 'XQUF_ReservedName',
 		additionalRules: [
 			`XQUF_ReservedName ::= 'insert' | 'delete' | 'replace' | 'rename' | 'copy' | 'modify' | 'updating' | 'revalidation' | 'skip' | 'of' | 'into' | 'before' | 'after' | 'first' | 'last' | 'node' | 'nodes' | 'invoke' | 'with'`,

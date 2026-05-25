@@ -22,9 +22,5 @@
   {
     "testCase": "fn-outermost-022",
     "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-outermost-100",
-    "outcome": "parse-failed"
   }
 ]

@@ -1,14 +1,1 @@
-[
-  {
-    "testCase": "fn-normalize-unicode-11",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-normalize-unicode-11-6-0",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-normalize-unicode-11-6-2",
-    "outcome": "parse-failed"
-  }
-]
+[]

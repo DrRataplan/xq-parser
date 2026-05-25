@@ -1,10 +1,1 @@
-[
-  {
-    "testCase": "K2-ComputeConPI-12",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-ComputeConPI-18",
-    "outcome": "parse-failed"
-  }
-]
+[]

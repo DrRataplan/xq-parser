@@ -3,9 +3,5 @@
     "testCase": "Constr-attr-enclexpr-9",
     "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
-  },
-  {
-    "testCase": "K2-DirectConElemAttr-75",
-    "outcome": "parse-failed"
   }
 ]

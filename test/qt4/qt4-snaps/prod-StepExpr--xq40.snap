@@ -1,9 +1,5 @@
 [
   {
-    "testCase": "K2-Steps-45",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "Steps-leading-lone-slash-2",
     "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"

@@ -1,23 +1,19 @@
 [
   {
-    "testCase": "RecordType-007",
-    "outcome": "parse-succeeded",
-    "expectedCode": "XPST0003"
+    "testCase": "RecordType-004",
+    "outcome": "parse-failed"
   },
   {
-    "testCase": "RecordType-012",
-    "outcome": "parse-succeeded",
-    "expectedCode": "XPST0003"
+    "testCase": "RecordType-015",
+    "outcome": "parse-failed"
   },
   {
-    "testCase": "RecordType-013",
-    "outcome": "parse-succeeded",
-    "expectedCode": "XPST0003"
+    "testCase": "RecordType-017",
+    "outcome": "parse-failed"
   },
   {
-    "testCase": "RecordType-014",
-    "outcome": "parse-succeeded",
-    "expectedCode": "XPST0003"
+    "testCase": "RecordType-018",
+    "outcome": "parse-failed"
   },
   {
     "testCase": "RecordType-103",

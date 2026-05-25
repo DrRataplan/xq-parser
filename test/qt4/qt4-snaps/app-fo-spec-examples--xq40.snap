@@ -1,26 +1,6 @@
 [
   {
-    "testCase": "fo-test-fn-compare-026",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "fo-test-fn-regex-003",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-distinct-ordered-nodes-002",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-innermost-002",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-outermost-002",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-atomic-equal-015",
     "outcome": "parse-failed"
   },
   {
@@ -29,18 +9,6 @@
   },
   {
     "testCase": "fo-test-fn-parse-json-008",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-jkey-001",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-jvalue-001",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-jvalue-003",
     "outcome": "parse-failed"
   }
 ]

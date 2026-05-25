@@ -2,13 +2,5 @@
   {
     "testCase": "K-Literals-31a",
     "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-Literals-28",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-Literals-39",
-    "outcome": "parse-failed"
   }
 ]

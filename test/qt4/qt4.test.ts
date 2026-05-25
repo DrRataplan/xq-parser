@@ -162,12 +162,22 @@ if (catalogPath && fs.existsSync(catalogPath)) {
 			const { expected, code: expectedCode } = getExpected(resultEl);
 			if (expected === 'ambiguous') continue;
 
+			const fileRef = testEl.getAttribute('file');
+			let query: string;
+			if (fileRef) {
+				const filePath = path.join(QT4_DIR, fileRef);
+				if (!fs.existsSync(filePath)) continue;
+				query = fs.readFileSync(filePath, 'utf8');
+			} else {
+				query = testEl.textContent ?? '';
+			}
+
 			for (const grammar of getGrammars(allDeps)) {
 				const key = `${slug}--${grammar}`;
 				allInputs.push({
 					testSetSlug: slug,
 					testCase: name,
-					query: testEl.textContent ?? '',
+					query,
 					grammar,
 					expected,
 					expectedCode,

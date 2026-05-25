@@ -1,6 +1,14 @@
 [
   {
-    "testCase": "Keywords-fn-jtree-1",
+    "testCase": "Keywords-fn-xsd-validator-1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Keywords-fn-sort-by-1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Keywords-array-sort-by-1",
     "outcome": "parse-failed"
   }
 ]

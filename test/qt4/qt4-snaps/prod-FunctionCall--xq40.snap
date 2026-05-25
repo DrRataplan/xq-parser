@@ -27,9 +27,8 @@
     "expectedCode": "XPST0003"
   },
   {
-    "testCase": "function-call-reserved-function-names-026",
-    "outcome": "parse-succeeded",
-    "expectedCode": "XPST0003"
+    "testCase": "function-call-reserved-function-names-026a",
+    "outcome": "parse-failed"
   },
   {
     "testCase": "function-call-reserved-function-names-033",

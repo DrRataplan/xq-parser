@@ -3,29 +3,5 @@
     "testCase": "Constr-pi-content-9",
     "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
-  },
-  {
-    "testCase": "K2-DirectConOther-49",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-DirectConOther-50",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-DirectConOther-51",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-DirectConOther-52",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-DirectConOther-53",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-DirectConOther-54",
-    "outcome": "parse-failed"
   }
 ]

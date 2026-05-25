@@ -22,9 +22,5 @@
   {
     "testCase": "fn-innermost-022",
     "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-innermost-100",
-    "outcome": "parse-failed"
   }
 ]
