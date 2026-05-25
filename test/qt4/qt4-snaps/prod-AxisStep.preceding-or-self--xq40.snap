@@ -1,18 +1,1 @@
-[
-  {
-    "testCase": "preceding-or-self-22",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "preceding-or-self-23",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "preceding-or-self-35",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "preceding-or-self-36",
-    "outcome": "parse-failed"
-  }
-]
+[]

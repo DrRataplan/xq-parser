@@ -1,14 +1,1 @@
-[
-  {
-    "testCase": "id-rename-expr-035",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "id-rename-expr-036",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "id-rename-expr-037",
-    "outcome": "parse-failed"
-  }
-]
+[]

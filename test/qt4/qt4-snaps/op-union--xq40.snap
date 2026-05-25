@@ -1,14 +1,1 @@
-[
-  {
-    "testCase": "K2-SeqUnion-43",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-SeqUnion-44",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-SeqUnion-45",
-    "outcome": "parse-failed"
-  }
-]
+[]

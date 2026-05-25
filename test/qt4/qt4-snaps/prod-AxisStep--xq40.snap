@@ -42,17 +42,5 @@
   {
     "testCase": "Axes126",
     "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-Axes-53",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-Axes-75",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-Axes-76",
-    "outcome": "parse-failed"
   }
 ]

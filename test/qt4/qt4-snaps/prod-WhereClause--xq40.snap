@@ -5,16 +5,8 @@
     "expectedCode": "XPST0003"
   },
   {
-    "testCase": "WhereExpr027",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "K2-WhereExpr-1",
     "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
-  },
-  {
-    "testCase": "cbcl-left-outer-join-004",
-    "outcome": "parse-failed"
   }
 ]

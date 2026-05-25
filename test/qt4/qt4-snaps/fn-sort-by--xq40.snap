@@ -1,14 +1,1 @@
-[
-  {
-    "testCase": "fn-sort-by-spec-4",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-sort-by-spec-5",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-sort-by-spec-6",
-    "outcome": "parse-failed"
-  }
-]
+[]

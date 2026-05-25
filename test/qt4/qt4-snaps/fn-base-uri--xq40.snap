@@ -1,18 +1,1 @@
-[
-  {
-    "testCase": "cbcl-base-uri-001",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "cbcl-base-uri-002",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "cbcl-base-uri-003",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "cbcl-base-uri-004",
-    "outcome": "parse-failed"
-  }
-]
+[]

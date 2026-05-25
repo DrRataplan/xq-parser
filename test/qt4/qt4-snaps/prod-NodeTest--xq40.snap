@@ -13,17 +13,5 @@
     "testCase": "K2-NodeTest-15",
     "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
-  },
-  {
-    "testCase": "K2-NodeTest-41",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-NodeTest-42",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-NodeTest-43",
-    "outcome": "parse-failed"
   }
 ]

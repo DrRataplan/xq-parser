@@ -1,90 +1,10 @@
 [
   {
-    "testCase": "fo-test-fn-parse-integer-011",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "fo-test-fn-compare-026",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "fo-test-fn-replace-001",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-replace-002",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-replace-003",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-replace-004",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-replace-005",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-replace-006",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-replace-007",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-replace-008",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-replace-009",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-replace-010",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-replace-011",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-replace-012",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-replace-013",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-replace-014",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "fo-test-fn-regex-003",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-path-013",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-path-014",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-path-015",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-path-016",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-path-017",
     "outcome": "parse-failed"
   },
   {
@@ -100,46 +20,6 @@
     "outcome": "parse-failed"
   },
   {
-    "testCase": "fo-test-fn-ends-with-subsequence-008",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-deep-equal-001",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-deep-equal-002",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-deep-equal-003",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-deep-equal-004",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-deep-equal-005",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-last-001",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-sort-004",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-sort-by-005",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-sort-by-006",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "fo-test-fn-atomic-equal-015",
     "outcome": "parse-failed"
   },
@@ -148,23 +28,7 @@
     "outcome": "parse-failed"
   },
   {
-    "testCase": "fo-test-fn-element-to-map-004",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-element-to-map-005",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-element-to-map-006",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "fo-test-fn-parse-json-008",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-jtree-003",
     "outcome": "parse-failed"
   },
   {

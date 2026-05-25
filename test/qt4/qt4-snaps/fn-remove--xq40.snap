@@ -1,18 +1,1 @@
-[
-  {
-    "testCase": "K-SeqRemoveFunc-21",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K-SeqRemoveFunc-22",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K-SeqRemoveFunc-23",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K-SeqRemoveFunc-24",
-    "outcome": "parse-failed"
-  }
-]
+[]

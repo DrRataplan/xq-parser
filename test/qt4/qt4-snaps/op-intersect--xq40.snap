@@ -1,10 +1,1 @@
-[
-  {
-    "testCase": "K2-SeqIntersect-39",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-SeqIntersect-40",
-    "outcome": "parse-failed"
-  }
-]
+[]

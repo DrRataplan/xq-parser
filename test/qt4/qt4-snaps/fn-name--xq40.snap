@@ -1,9 +1,5 @@
 [
   {
-    "testCase": "fn-name-6",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "fn-name-27",
     "outcome": "parse-failed"
   }

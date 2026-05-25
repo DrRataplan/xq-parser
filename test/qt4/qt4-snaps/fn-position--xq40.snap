@@ -1,10 +1,1 @@
-[
-  {
-    "testCase": "position-4",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "position-5",
-    "outcome": "parse-failed"
-  }
-]
+[]

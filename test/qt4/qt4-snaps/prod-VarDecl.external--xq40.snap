@@ -1,9 +1,5 @@
 [
   {
-    "testCase": "K2-ExternalVariablesWithout-9",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "K2-ExternalVariablesWithout-18",
     "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
