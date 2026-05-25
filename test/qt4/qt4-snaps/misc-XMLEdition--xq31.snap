@@ -8,9 +8,5 @@
     "testCase": "XML11-1ed-Included-char-1",
     "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
-  },
-  {
-    "testCase": "XML11-c0-001",
-    "outcome": "parse-failed"
   }
 ]

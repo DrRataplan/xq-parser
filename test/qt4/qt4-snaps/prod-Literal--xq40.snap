@@ -12,13 +12,5 @@
     "testCase": "K2-Literals-21",
     "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
-  },
-  {
-    "testCase": "K2-Literals-28",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-Literals-39",
-    "outcome": "parse-failed"
   }
 ]

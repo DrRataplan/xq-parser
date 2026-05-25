@@ -6,25 +6,5 @@
   {
     "testCase": "eqname-023",
     "outcome": "parse-failed"
-  },
-  {
-    "testCase": "eqname-040",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "eqname-041",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "eqname-042",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "eqname-043",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "eqname-914",
-    "outcome": "parse-failed"
   }
 ]

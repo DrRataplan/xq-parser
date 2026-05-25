@@ -1,62 +1,6 @@
 [
   {
-    "testCase": "sequence-type-40",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "sequence-type-41",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "sequence-type-42",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "sequence-type-43",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "sequence-type-44",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "sequence-type-45",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "sequence-type-46",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "sequence-type-47",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "sequence-type-48",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "sequence-type-49",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "sequence-type-50",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "sequence-type-51",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "sequence-type-52",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "sequence-type-53",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "sequence-type-54",
     "outcome": "parse-failed"
   }
 ]
