@@ -4,19 +4,7 @@
     "outcome": "parse-failed"
   },
   {
-    "testCase": "generate-id-010",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "generate-id-011",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "generate-id-012",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "generate-id-013",
     "outcome": "parse-failed"
   },
   {
@@ -33,26 +21,6 @@
   },
   {
     "testCase": "generate-id-017",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "generate-id-019",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "generate-id-020",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "generate-id-021",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "generate-id-022",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "generate-id-023",
     "outcome": "parse-failed"
   }
 ]

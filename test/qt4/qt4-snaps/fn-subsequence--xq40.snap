@@ -1,14 +1,1 @@
-[
-  {
-    "testCase": "K-SeqSubsequenceFunc-41",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K-SeqSubsequenceFunc-42",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K-SeqSubsequenceFunc-43",
-    "outcome": "parse-failed"
-  }
-]
+[]

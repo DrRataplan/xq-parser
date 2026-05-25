@@ -24,58 +24,6 @@
     "outcome": "parse-failed"
   },
   {
-    "testCase": "fn-outermost-034",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-outermost-036",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-outermost-038",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-outermost-040",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-outermost-042",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-outermost-043",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-outermost-044",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-outermost-045",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-outermost-046",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-outermost-048",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-outermost-050",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-outermost-052",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-outermost-054",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "fn-outermost-100",
     "outcome": "parse-failed"
   }

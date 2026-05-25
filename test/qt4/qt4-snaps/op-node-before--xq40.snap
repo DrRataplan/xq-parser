@@ -1,9 +1,5 @@
 [
   {
-    "testCase": "K-NodeBefore-12",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "precedes-415",
     "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"

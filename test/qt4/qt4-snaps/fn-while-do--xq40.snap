@@ -1,10 +1,1 @@
-[
-  {
-    "testCase": "while-do-011",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "while-do-014",
-    "outcome": "parse-failed"
-  }
-]
+[]

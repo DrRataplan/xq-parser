@@ -8,41 +8,5 @@
     "testCase": "K-FilterExpr-5",
     "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
-  },
-  {
-    "testCase": "K-FilterExpr-73",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K-FilterExpr-74",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K-FilterExpr-75",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K-FilterExpr-90",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-FilterExpr-1",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-Predicates-2",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-Predicates-3",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-Predicates-7",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "predicate-411",
-    "outcome": "parse-failed"
   }
 ]

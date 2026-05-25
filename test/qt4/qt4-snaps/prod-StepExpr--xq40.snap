@@ -1,9 +1,5 @@
 [
   {
-    "testCase": "K2-Steps-4",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "K2-Steps-45",
     "outcome": "parse-failed"
   },

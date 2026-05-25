@@ -24,58 +24,6 @@
     "outcome": "parse-failed"
   },
   {
-    "testCase": "fn-innermost-034",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-innermost-036",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-innermost-038",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-innermost-040",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-innermost-042",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-innermost-043",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-innermost-044",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-innermost-045",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-innermost-046",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-innermost-048",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-innermost-050",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-innermost-052",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-innermost-054",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "fn-innermost-100",
     "outcome": "parse-failed"
   }

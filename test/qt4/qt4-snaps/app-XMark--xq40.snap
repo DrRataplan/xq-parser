@@ -1,9 +1,5 @@
 [
   {
-    "testCase": "XMark-Q3",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "XMark-All",
     "outcome": "parse-failed"
   }

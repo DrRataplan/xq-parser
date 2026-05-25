@@ -1,10 +1,1 @@
-[
-  {
-    "testCase": "partition-016",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "partition-020",
-    "outcome": "parse-failed"
-  }
-]
+[]

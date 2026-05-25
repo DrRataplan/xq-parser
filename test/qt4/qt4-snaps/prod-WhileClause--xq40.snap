@@ -5,16 +5,8 @@
     "expectedCode": "XPST0003"
   },
   {
-    "testCase": "WhileExpr027",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "K2-WhileExpr-1",
     "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
-  },
-  {
-    "testCase": "cbcl-while-left-outer-join-004",
-    "outcome": "parse-failed"
   }
 ]

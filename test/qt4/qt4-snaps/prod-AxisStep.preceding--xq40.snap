@@ -1,18 +1,1 @@
-[
-  {
-    "testCase": "preceding-22",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "preceding-23",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-precedingAxis-5",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "K2-precedingAxis-6",
-    "outcome": "parse-failed"
-  }
-]
+[]

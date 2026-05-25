@@ -1,14 +1,6 @@
 [
   {
-    "testCase": "PathExpr-J-009",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "PathExpr-J-022",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "PathExpr-J-109",
     "outcome": "parse-failed"
   },
   {

@@ -1,18 +1,1 @@
-[
-  {
-    "testCase": "surrogates14",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "surrogates15",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "surrogates14a",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "surrogates15a",
-    "outcome": "parse-failed"
-  }
-]
+[]
