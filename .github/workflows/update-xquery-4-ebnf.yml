@@ -1,6 +1,12 @@
 name: Update XQuery4 EBNFs
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * 1'  # every Monday at 06:00 UTC
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -11,7 +17,7 @@ jobs:
     - name: Use Node.js latest
       uses: actions/setup-node@v4
       with:
-        node-version: latest
+        node-version: node
         cache: 'npm'
     - run: npm ci
     - name: Download XQuery 4 grammar
@@ -19,32 +25,33 @@ jobs:
     - name: Apply changes on XQuery 4 grammar
       run: node --experimental-strip-types ./src/index.ts ./rawgrammars/XQuery-40.ebnf > transformedgrammars/XQuery-40-full.ebnf
 
-    - name: detect changes to grammar
+    - name: Detect changes to grammar
       id: has-changes
       run: |
-        git diff-files --quiet ./transformedgrammars/XQuery-40-full.ebnf;
-        if [[ $? -eq 0 ]]; then
-         	echo "::set-output name=has-diff::true"
+        if git diff-files --quiet ./transformedgrammars/XQuery-40-full.ebnf ./rawgrammars/XQuery-40.ebnf; then
+          echo "has-diff=false" >> $GITHUB_OUTPUT
         else
-         	echo "::set-output name=has-diff::false"
+          echo "has-diff=true" >> $GITHUB_OUTPUT
         fi
 
     - name: Stop if the result is the same
-      if: steps.set_output.outputs.has-diff == 'false'
+      if: steps.has-changes.outputs.has-diff == 'false'
       run: |
         gh run cancel ${{ github.run_id }}
         gh run watch ${{ github.run_id }}
+      env:
+        GH_TOKEN: ${{ github.token }}
 
-    - name: Add the new changes
+    - name: Add the new grammar changes
       run: |
-        git add ./transformedgrammars/XQuery-40-full.ebnf;
+        git add ./transformedgrammars/XQuery-40-full.ebnf
         git add ./rawgrammars/XQuery-40.ebnf
 
     - name: Install REx parser
       run: |
-        git clone https://github.com/GuntherRademacher/rex-parser-generator.git;
-        cd rex-parser-generator;
-        rex/scripts/build-gpp.sh;
+        git clone https://github.com/GuntherRademacher/rex-parser-generator.git
+        cd rex-parser-generator
+        rex/scripts/build-gpp.sh
         ls rex/build/bin
 
     - run: pwd
@@ -52,10 +59,10 @@ jobs:
 
     - name: Run REx parser to make the new parser
       run: |
-        ./rex-parser-generator/rex/build/bin/rex -lalr 2 -typescript ./transformedgrammars/XQuery-40-full.ebnf;
-        mv ./transformedgrammars/XQuery-40-full.ebnf ./parsers/XQuery-40-full.ts
+        ./rex-parser-generator/rex/build/bin/rex -lalr 2 -typescript ./transformedgrammars/XQuery-40-full.ebnf
+        mv ./transformedgrammars/XQuery-40-full.ts ./parsers/XQuery-40-full.ts
 
-    - name: Check everything in
+    - name: Stage generated parser
       run: git add ./parsers/XQuery-40-full.ts
 
     - name: Make a branch and commit
@@ -66,3 +73,5 @@ jobs:
         git checkout -b $BRANCH_NAME
         git commit -m "feat(parser): update parser to the newest spec"
         git push origin -u $BRANCH_NAME
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
