@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.1](https://github.com/DrRataplan/xq-parser/compare/xq-parser-v0.5.0...xq-parser-v0.5.1) (2026-05-29)
+
+
+### Bug Fixes
+
+* add repository url to package.json for npm provenance publishing ([#10](https://github.com/DrRataplan/xq-parser/issues/10)) ([f06a83f](https://github.com/DrRataplan/xq-parser/commit/f06a83f3eb7db726c01c7d557f7feede972a1b28))
+
 ## [0.5.0](https://github.com/DrRataplan/xq-parser/compare/xq-parser-v0.4.0...xq-parser-v0.5.0) (2026-05-29)
 
 
