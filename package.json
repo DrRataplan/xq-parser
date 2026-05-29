@@ -16,6 +16,10 @@
     "build": "tsc --project ./tsconfig.publish.json",
     "generate-parsers": "./generate-parsers.sh"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DrRataplan/xq-parser"
+  },
   "author": "Martin Middel",
   "license": "MIT",
   "description": "",
