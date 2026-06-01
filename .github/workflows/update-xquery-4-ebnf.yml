@@ -1,4 +1,8 @@
-name: Update XQuery4 EBNFs
+# Syncs the XQuery 4.0 EBNF grammar from the upstream REx sample grammars,
+# applies XQUF and eXist-DB mutations, regenerates the TypeScript parser with
+# REx, and opens a pull request with the result.
+# Runs weekly (Mondays 06:00 UTC) and can be triggered manually.
+name: Sync XQuery 4.0 grammar from upstream
 
 on:
   workflow_dispatch:
