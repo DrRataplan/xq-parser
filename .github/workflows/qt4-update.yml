@@ -5,6 +5,10 @@ on:
     - cron: '0 9 * * 1'  # Every Monday at 09:00 UTC
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -29,7 +33,7 @@ jobs:
 
       - name: Get latest commit from qt4cg/qt4tests
         id: latest
-        run: echo "sha=$(git ls-remote https://github.com/qt4cg/qt4tests.git refs/heads/main | cut -f1)" >> $GITHUB_OUTPUT
+        run: echo "sha=$(git ls-remote https://github.com/qt4cg/qt4tests.git refs/heads/master | cut -f1)" >> $GITHUB_OUTPUT
 
       - name: Check if update needed
         id: check
@@ -44,7 +48,7 @@ jobs:
         if: steps.check.outputs.needed == 'true'
         run: |
           cd qt4tests
-          git fetch origin
+          git fetch origin master
           git checkout ${{ steps.latest.outputs.sha }}
           cd ..
           git add qt4tests
@@ -58,6 +62,7 @@ jobs:
       - name: Commit and open PR
         if: steps.check.outputs.needed == 'true'
         env:
+          GH_TOKEN: ${{ github.token }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           SHORT="${{ steps.latest.outputs.sha }}"
