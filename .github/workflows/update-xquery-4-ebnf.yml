@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   build:
@@ -59,8 +60,9 @@ jobs:
 
     - name: Run REx parser to make the new parser
       run: |
-        ./rex-parser-generator/rex/build/bin/rex -lalr 2 -typescript ./transformedgrammars/XQuery-40-full.ebnf
-        mv ./transformedgrammars/XQuery-40-full.ts ./parsers/XQuery-40-full.ts
+        ./rex-parser-generator/rex/build/bin/rex -typescript ./transformedgrammars/XQuery-40-full.ebnf -glalr 1 -a pi -tree
+        cat parser_header.txt ./XQuery-40-full.ts > parsers/XQuery-40-full.ts
+        rm ./XQuery-40-full.ts
 
     - name: Stage generated parser
       run: git add ./parsers/XQuery-40-full.ts
@@ -75,3 +77,8 @@ jobs:
         git push origin -u $BRANCH_NAME
       env:
         GITHUB_TOKEN: ${{ github.token }}
+
+    - name: Create pull request
+      run: gh pr create --title "feat(parser): update XQ40 parser to latest spec" --body "Automated update of the XQuery 4.0 grammar and generated parser."
+      env:
+        GH_TOKEN: ${{ github.token }}
