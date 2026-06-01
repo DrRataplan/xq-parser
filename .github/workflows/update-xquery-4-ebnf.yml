@@ -83,6 +83,9 @@ jobs:
         GITHUB_TOKEN: ${{ github.token }}
 
     - name: Create pull request
-      run: gh pr create --title "feat(parser): update XQ40 parser to latest spec" --body "Automated update of the XQuery 4.0 grammar and generated parser."
+      run: |
+        gh pr create \
+          --title "feat(parser): update XQ40 parser to latest spec" \
+          --body "Automated update of the XQuery 4.0 grammar and generated parser."
       env:
         GH_TOKEN: ${{ github.token }}
