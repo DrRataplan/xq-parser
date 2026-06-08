@@ -1,13 +1,5 @@
 [
   {
-    "testCase": "fn-json-to-xml-731",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-json-to-xml-733",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "fn-json-to-xml-734",
     "outcome": "parse-failed"
   },

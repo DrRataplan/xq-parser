@@ -1,0 +1,22 @@
+[
+  {
+    "testCase": "fn-regex-030",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-regex-031",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-regex-032",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-regex-033",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-regex-034",
+    "outcome": "parse-failed"
+  }
+]
