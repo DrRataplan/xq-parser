@@ -1,1 +1,6 @@
-[]
+[
+  {
+    "testCase": "ArrayType-100",
+    "outcome": "parse-failed"
+  }
+]
