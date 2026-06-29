@@ -4,11 +4,7 @@
     "outcome": "parse-failed"
   },
   {
-    "testCase": "Keywords-fn-sort-by-1",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "Keywords-array-sort-by-1",
+    "testCase": "Keywords-fn-element-to-map-1",
     "outcome": "parse-failed"
   }
 ]
