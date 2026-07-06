@@ -1,1 +1,66 @@
-[]
+[
+  {
+    "testCase": "JAxes-204",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "JAxes-205",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "JAxes-206",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "JAxes-207",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "JAxes-208",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "JAxes-209",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "JAxes-210",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "JAxes-211",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "JAxes-212",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "JAxes-215",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "JAxes-216",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "JAxes-251",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "JAxes-252",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "JAxes-253",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "JAxes-254",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "JAxes-255",
+    "outcome": "parse-failed"
+  }
+]
