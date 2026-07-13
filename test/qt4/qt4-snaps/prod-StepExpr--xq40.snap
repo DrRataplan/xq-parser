@@ -1,5 +1,57 @@
 [
   {
+    "testCase": "K2-Steps-46",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Steps-lookup-1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Steps-lookup-2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Steps-lookup-3",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Steps-lookup-4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Steps-lookup-5",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Steps-lookup-6",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Steps-lookup-7",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Steps-lookup-8",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Steps-lookup-9",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Steps-lookup-10",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Steps-lookup-11",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Steps-lookup-12",
+    "outcome": "parse-failed"
+  },
+  {
     "testCase": "Steps-leading-lone-slash-2",
     "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
