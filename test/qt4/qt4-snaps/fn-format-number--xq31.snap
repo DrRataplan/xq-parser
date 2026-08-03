@@ -67,5 +67,9 @@
   {
     "testCase": "numberformat-554",
     "outcome": "parse-failed"
+  },
+  {
+    "testCase": "numberformat-556",
+    "outcome": "parse-failed"
   }
 ]

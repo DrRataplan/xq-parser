@@ -1,18 +1,18 @@
 [
   {
-    "testCase": "array-filter-014",
+    "testCase": "TraceClause-001",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "array-filter-015",
+    "testCase": "TraceClause-002",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "array-filter-401",
+    "testCase": "TraceClause-004",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "array-filter-404",
+    "testCase": "TraceClause-006",
     "outcome": "parse-failed"
   }
 ]
