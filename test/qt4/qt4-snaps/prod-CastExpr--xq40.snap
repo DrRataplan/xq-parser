@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "testCase": "K-SeqExprCast-1a",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "K-SeqExprCast-2a",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "K-SeqExprCast-10b",
+    "outcome": "parse-failed"
+  }
+]
