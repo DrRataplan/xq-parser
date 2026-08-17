@@ -1,82 +1,82 @@
 [
   {
-    "testCase": "parse-xml-008a",
+    "testCase": "cast-sequence-001",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "parse-xml-008b",
+    "testCase": "cast-sequence-002",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "parse-xml-009a",
+    "testCase": "cast-sequence-902",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "parse-xml-010a",
+    "testCase": "cast-array-001",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "parse-xml-010b",
+    "testCase": "cast-array-002",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "parse-xml-401",
+    "testCase": "cast-array-003",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "parse-xml-402",
+    "testCase": "cast-array-004",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "parse-xml-410",
+    "testCase": "cast-array-005",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "parse-xml-411",
+    "testCase": "cast-array-901",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "parse-xml-412",
+    "testCase": "cast-array-902",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "parse-xml-413",
+    "testCase": "cast-array-903",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "parse-xml-414",
+    "testCase": "cast-map-001",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "parse-xml-415",
+    "testCase": "cast-map-002",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "parse-xml-420",
+    "testCase": "cast-map-003",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "parse-xml-421",
+    "testCase": "cast-map-004",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "parse-xml-422",
+    "testCase": "cast-map-901",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "parse-xml-423",
+    "testCase": "cast-map-902",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "parse-xml-424",
+    "testCase": "cast-record-001",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "parse-xml-454",
+    "testCase": "cast-record-002",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "parse-xml-471",
+    "testCase": "cast-record-003",
     "outcome": "parse-failed"
   }
 ]

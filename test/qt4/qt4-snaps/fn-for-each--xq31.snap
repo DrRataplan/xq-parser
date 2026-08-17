@@ -1,9 +1,5 @@
 [
   {
-    "testCase": "for-each-015",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "for-each-401",
     "outcome": "parse-failed"
   },
