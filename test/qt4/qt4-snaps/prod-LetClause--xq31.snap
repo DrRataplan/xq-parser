@@ -13,9 +13,5 @@
     "testCase": "LetExpr024",
     "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
-  },
-  {
-    "testCase": "let-arr-015a",
-    "outcome": "parse-failed"
   }
 ]

@@ -8,5 +8,13 @@
     "testCase": "inline-fn-016",
     "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
+  },
+  {
+    "testCase": "inline-fn-038",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "inline-fn-039",
+    "outcome": "parse-failed"
   }
 ]

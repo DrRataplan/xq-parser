@@ -1,9 +1,5 @@
 [
   {
-    "testCase": "fn-for-each-pair-038",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "fn-for-each-pair-404",
     "outcome": "parse-failed"
   },
