@@ -197,6 +197,10 @@
     "outcome": "parse-failed"
   },
   {
+    "testCase": "function-decl-40-039",
+    "outcome": "parse-failed"
+  },
+  {
     "testCase": "function-decl-40-901",
     "outcome": "parse-failed"
   },
@@ -238,6 +242,10 @@
   },
   {
     "testCase": "function-decl-40-913",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-040",
     "outcome": "parse-failed"
   }
 ]

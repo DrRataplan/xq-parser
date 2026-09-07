@@ -1,119 +1,106 @@
 [
   {
-    "testCase": "JAxes-204",
+    "testCase": "cast-sequence-001",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-205",
+    "testCase": "cast-sequence-002",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-206",
+    "testCase": "cast-sequence-902",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-207",
+    "testCase": "cast-array-001",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-208",
+    "testCase": "cast-array-002",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-209",
+    "testCase": "cast-array-003",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-210",
+    "testCase": "cast-array-004",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-211",
+    "testCase": "cast-array-005",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-212",
+    "testCase": "cast-array-901",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-215",
+    "testCase": "cast-array-902",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-216",
+    "testCase": "cast-array-903",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-219",
+    "testCase": "cast-map-001",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-220",
+    "testCase": "cast-map-002",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-221",
+    "testCase": "cast-map-003",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-222",
+    "testCase": "cast-map-004",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-223",
+    "testCase": "cast-map-901",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-224",
+    "testCase": "cast-map-902",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-225",
+    "testCase": "cast-record-001",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-226",
+    "testCase": "cast-record-002",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-251",
+    "testCase": "cast-record-003",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-252",
+    "testCase": "cast-array-006",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-253",
+    "testCase": "cast-array-904",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-254",
+    "testCase": "cast-map-005",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-255",
+    "testCase": "cast-map-903",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-256",
+    "testCase": "cast-record-004",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "JAxes-257",
+    "testCase": "cast-record-901",
     "outcome": "parse-failed"
-  },
-  {
-    "testCase": "JAxes-258",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "JAxes-336",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "JAxes-907",
-    "outcome": "parse-succeeded",
-    "expectedCode": "XPST0003"
   }
 ]

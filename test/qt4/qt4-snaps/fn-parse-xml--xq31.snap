@@ -64,6 +64,14 @@
     "outcome": "parse-failed"
   },
   {
+    "testCase": "parse-xml-423",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "parse-xml-424",
+    "outcome": "parse-failed"
+  },
+  {
     "testCase": "parse-xml-454",
     "outcome": "parse-failed"
   },

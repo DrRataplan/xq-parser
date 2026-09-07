@@ -73,5 +73,17 @@
   {
     "testCase": "function-decl-reserved-function-names-031",
     "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-016",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-017",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-018",
+    "outcome": "parse-failed"
   }
 ]

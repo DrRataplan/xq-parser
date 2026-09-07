@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "testCase": "deep-equal-40-function-items-060",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "deep-equal-40-function-items-061",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "deep-equal-40-function-items-096",
+    "outcome": "parse-failed"
+  }
+]
