@@ -1,10 +1,22 @@
 [
   {
-    "testCase": "fn-parse-json-731",
+    "testCase": "fn-parse-json-709",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "fn-parse-json-733",
+    "testCase": "fn-parse-json-710",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-parse-json-715",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-parse-json-717",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-parse-json-718",
     "outcome": "parse-failed"
   },
   {
@@ -25,6 +37,22 @@
   },
   {
     "testCase": "fn-parse-json-763",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-parse-json-960",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-parse-json-961",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-parse-json-962",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-parse-json-963",
     "outcome": "parse-failed"
   }
 ]

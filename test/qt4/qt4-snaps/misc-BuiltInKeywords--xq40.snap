@@ -1,14 +1,54 @@
 [
   {
-    "testCase": "Keywords-fn-xsd-validator-1",
+    "testCase": "Keywords-fn-node-name-1",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "Keywords-fn-sort-by-1",
+    "testCase": "Keywords-fn-nilled-1",
     "outcome": "parse-failed"
   },
   {
-    "testCase": "Keywords-array-sort-by-1",
+    "testCase": "Keywords-fn-base-uri-1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Keywords-fn-document-uri-1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Keywords-fn-location-1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Keywords-fn-name-1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Keywords-fn-local-name-1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Keywords-fn-namespace-uri-1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Keywords-fn-lang-1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Keywords-fn-id-1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Keywords-fn-element-with-id-1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Keywords-fn-idref-1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Keywords-fn-xml-to-json-1",
     "outcome": "parse-failed"
   }
 ]
