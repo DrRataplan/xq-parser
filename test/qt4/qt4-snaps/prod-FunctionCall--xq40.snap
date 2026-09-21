@@ -27,10 +27,6 @@
     "expectedCode": "XPST0003"
   },
   {
-    "testCase": "function-call-reserved-function-names-026a",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "function-call-reserved-function-names-033",
     "outcome": "parse-failed"
   },
@@ -60,6 +56,15 @@
   },
   {
     "testCase": "function-call-reserved-function-names-047",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-call-reserved-function-names-049",
+    "outcome": "parse-succeeded",
+    "expectedCode": "XPST0003"
+  },
+  {
+    "testCase": "function-call-reserved-function-names-050",
     "outcome": "parse-failed"
   }
 ]

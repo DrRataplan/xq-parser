@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "testCase": "itemTypeDecl-078",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "itemTypeDecl-079",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "itemTypeDecl-080",
+    "outcome": "parse-failed"
+  }
+]
