@@ -1,0 +1,10 @@
+[
+  {
+    "testCase": "ftmatchoptions-q2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ftmatchoptions-q3",
+    "outcome": "parse-failed"
+  }
+]

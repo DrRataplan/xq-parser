@@ -1,0 +1,250 @@
+[
+  {
+    "testCase": "castable-array-001",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-002",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-003",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-004",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-005",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-006",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-007",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-008",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-009",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-010",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-011",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-012",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-013",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-014",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-015",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-016",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-017",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-018",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-019",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-020",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-021",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-901",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-902",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-903",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-904",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-905",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-906",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-907",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-908",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-909",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-910",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-911",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-array-912",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-map-001",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-map-002",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-map-003",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-map-004",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-map-005",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-map-006",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-map-007",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-map-008",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-map-901",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-map-902",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-map-903",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-map-904",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-map-905",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-map-906",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-map-907",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-map-908",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-map-909",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-record-001",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-record-002",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-record-003",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-record-004",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-record-005",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-record-006",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-record-007",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-record-901",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-record-902",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-record-903",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-record-904",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "castable-record-905",
+    "outcome": "parse-failed"
+  }
+]

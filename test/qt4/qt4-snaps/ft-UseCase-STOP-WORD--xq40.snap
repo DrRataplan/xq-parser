@@ -1,0 +1,10 @@
+[
+  {
+    "testCase": "stop-word-queries-results-q2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "stop-word-queries-results-q2b",
+    "outcome": "parse-failed"
+  }
+]

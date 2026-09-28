@@ -1,0 +1,38 @@
+[
+  {
+    "testCase": "FTAnd-q1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTAnd-q2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTAnd-q3",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTAnd-q4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTAnd-q5",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTAnd-expr1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTAnd-expr2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTAnd-badexpr1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTAnd-andor",
+    "outcome": "parse-failed"
+  }
+]
