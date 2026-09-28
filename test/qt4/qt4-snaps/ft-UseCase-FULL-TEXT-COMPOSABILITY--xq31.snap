@@ -1,0 +1,14 @@
+[
+  {
+    "testCase": "full-text-composability-queries-results-q2b",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "full-text-composability-queries-results-q4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "full-text-composability-queries-results-q5",
+    "outcome": "parse-failed"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "testCase": "FTDistance-unconstrained-complexwords4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTDistance-unconstrained-complexwords5",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTDistance-unconstrained-complexexpr1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTDistance-unconstrained-complexexpr2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTDistance-unconstrained-complexexpr3",
+    "outcome": "parse-failed"
+  }
+]

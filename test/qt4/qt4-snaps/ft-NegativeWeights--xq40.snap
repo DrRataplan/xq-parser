@@ -1,0 +1,22 @@
+[
+  {
+    "testCase": "FTSelection-Weight-unconstrained-q1d",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-Weight-unconstrained-q1e",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-Weight-unconstrained-q1f",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-Weight-unconstrained-q1g",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-Weight-unconstrained-q1h",
+    "outcome": "parse-failed"
+  }
+]
