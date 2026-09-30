@@ -6,13 +6,5 @@
   {
     "testCase": "fo-test-fn-regex-003",
     "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-jkey-002",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-jvalue-002",
-    "outcome": "parse-failed"
   }
 ]

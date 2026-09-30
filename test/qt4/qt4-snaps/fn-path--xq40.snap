@@ -14,13 +14,5 @@
   {
     "testCase": "path014",
     "outcome": "parse-failed"
-  },
-  {
-    "testCase": "path118",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "path119",
-    "outcome": "parse-failed"
   }
 ]

@@ -1,18 +1,1 @@
-[
-  {
-    "testCase": "TraceClause-001",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "TraceClause-002",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "TraceClause-004",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "TraceClause-006",
-    "outcome": "parse-failed"
-  }
-]
+[]
