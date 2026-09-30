@@ -14,5 +14,29 @@
   {
     "testCase": "fn-load-xquery-module-403",
     "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-921",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-922",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-923",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-924",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-925",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-926",
+    "outcome": "parse-failed"
   }
 ]

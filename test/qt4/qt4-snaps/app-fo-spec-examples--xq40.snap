@@ -1,14 +1,10 @@
 [
   {
+    "testCase": "fo-test-fn-replace-016",
+    "outcome": "parse-failed"
+  },
+  {
     "testCase": "fo-test-fn-regex-003",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-map-build-013",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fo-test-fn-parse-json-008",
     "outcome": "parse-failed"
   }
 ]

@@ -1,0 +1,14 @@
+[
+  {
+    "testCase": "Extension1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Extension2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Extension",
+    "outcome": "parse-failed"
+  }
+]

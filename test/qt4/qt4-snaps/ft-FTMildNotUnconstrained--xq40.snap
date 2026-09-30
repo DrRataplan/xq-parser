@@ -1,0 +1,38 @@
+[
+  {
+    "testCase": "unconstrained-examples-353-1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTMildNot-unconstrained-q1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTMildNot-unconstrained-q2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTMildNot-unconstrained-expr1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTMildNot-unconstrained-and1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTMildNot-unconstrained-and2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTMildNot-unconstrained-or1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTMildNot-unconstrained-or2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTMildNot-unconstrained-not1",
+    "outcome": "parse-failed"
+  }
+]

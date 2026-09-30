@@ -55,30 +55,53 @@ jobs:
 
       - name: Regenerate snapshots
         if: steps.check.outputs.needed == 'true'
-        run: |
-          QT4_TESTS_DIR=qt4tests npm run update-snapshots
-          git add test/qt4/qt4-snaps/
+        run: QT4_TESTS_DIR=qt4tests npm run update-snapshots
 
-      - name: Commit and open PR
+      - name: Check for new failures
+        id: failures
         if: steps.check.outputs.needed == 'true'
-        env:
-          GH_TOKEN: ${{ github.token }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          clean=true
+          node scripts/new-failures.mjs || clean=false
+          echo "clean=$clean" >> $GITHUB_OUTPUT
+
+      - name: Commit
+        if: steps.check.outputs.needed == 'true'
         run: |
           SHORT="${{ steps.latest.outputs.sha }}"
           SHORT="${SHORT:0:7}"
-          BRANCH="chore/update-qt4tests-${SHORT}"
-
           git config --global user.email "bot@elliat.nl"
           git config --global user.name "Bot"
-          git checkout -b "$BRANCH"
+          git add qt4tests test/qt4/qt4-snaps/
           git commit -m "chore: update QT4 testset to ${SHORT}"
-          git push origin -u "$BRANCH"
 
-          EXISTING=$(gh pr list --head "$BRANCH" --json number --jq '.[0].number')
+      - name: Push directly to main (no new failures)
+        if: steps.check.outputs.needed == 'true' && steps.failures.outputs.clean == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git push origin HEAD:main
+          # An open update PR is now obsolete
+          OPEN=$(gh pr list --state open --json number,title --jq '[.[] | select(.title | startswith("chore: update QT4 testset"))][0].number')
+          if [ -n "$OPEN" ]; then
+            gh pr close "$OPEN" --delete-branch --comment "Superseded: the latest update had no new failures and was pushed directly to main."
+          fi
+
+      - name: Create or update PR (new failures)
+        if: steps.check.outputs.needed == 'true' && steps.failures.outputs.clean != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          SHORT="${{ steps.latest.outputs.sha }}"
+          SHORT="${SHORT:0:7}"
+          # Amend whatever update PR is already open (dependabot-style), else start one
+          EXISTING_PR=$(gh pr list --state open --json number,title,headRefName --jq '[.[] | select(.title | startswith("chore: update QT4 testset"))][0]')
+          BRANCH=$(echo "$EXISTING_PR" | jq -r '.headRefName // "chore/update-qt4tests"')
+          git push --force origin HEAD:refs/heads/$BRANCH
+          BODY="Updates qt4tests submodule to [\`${SHORT}\`](https://github.com/qt4cg/qt4tests/commit/${{ steps.latest.outputs.sha }}). This update introduces new failures."
+          EXISTING=$(echo "$EXISTING_PR" | jq -r '.number // empty')
           if [ -z "$EXISTING" ]; then
-            gh pr create \
-              --title "chore: update QT4 testset to ${SHORT}" \
-              --body "Updates qt4tests submodule to [\`${SHORT}\`](https://github.com/qt4cg/qt4tests/commit/${{ steps.latest.outputs.sha }})." \
-              --base main
+            gh pr create --head "$BRANCH" --base main --title "chore: update QT4 testset to ${SHORT}" --body "$BODY"
+          else
+            gh pr edit "$EXISTING" --title "chore: update QT4 testset to ${SHORT}" --body "$BODY"
           fi

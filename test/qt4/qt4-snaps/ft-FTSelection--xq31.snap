@@ -1,0 +1,18 @@
+[
+  {
+    "testCase": "FTPrimary-FTWords-q1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTPrimary-FTWords-FTTimes-q1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTPrimary-FTSelection-q1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTPrimary-FTExtensionSelection-q1",
+    "outcome": "parse-failed"
+  }
+]
