@@ -6,5 +6,9 @@
   {
     "testCase": "xml-to-json-019",
     "outcome": "parse-failed"
+  },
+  {
+    "testCase": "xml-to-json-415",
+    "outcome": "parse-failed"
   }
 ]

@@ -1,0 +1,18 @@
+[
+  {
+    "testCase": "character-queries-results-q3",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "character-queries-results-q3b",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "character-queries-results-q4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "character-queries-results-q4b",
+    "outcome": "parse-failed"
+  }
+]

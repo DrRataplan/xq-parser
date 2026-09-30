@@ -1,0 +1,42 @@
+[
+  {
+    "testCase": "element-queries-results-q1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "element-queries-results-q2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "element-queries-results-q4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "element-queries-results-q4b",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "element-queries-results-q5",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "element-queries-results-q5b",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "element-queries-results-q6",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "element-queries-results-q6b",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "element-queries-results-q7",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "element-queries-results-q7b",
+    "outcome": "parse-failed"
+  }
+]

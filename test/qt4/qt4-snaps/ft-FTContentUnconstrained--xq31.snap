@@ -1,0 +1,14 @@
+[
+  {
+    "testCase": "FTContent-unconstrained-q3",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTContent-unconstrained-q4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTContent-unconstrained-and1",
+    "outcome": "parse-failed"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "testCase": "FTNot-q2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTNot-q4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTNot-q5",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTNot-q7",
+    "outcome": "parse-failed"
+  }
+]

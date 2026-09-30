@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "testCase": "instanceof122a",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "instanceof123a",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "instanceof402",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "instanceof403",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "instanceof410",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "instanceof412",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "instanceof414",
+    "outcome": "parse-failed"
+  }
+]

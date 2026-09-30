@@ -1,0 +1,54 @@
+[
+  {
+    "testCase": "FTOr-q1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTOr-q2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTOr-q3",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTOr-q4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTOr-q5",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTOr-three-q1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTOr-three-q2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTOr-three-q3",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTOr-expr1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTOr-expr2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTOr-expr3",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTOr-badexpr1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTOr-andor",
+    "outcome": "parse-failed"
+  }
+]

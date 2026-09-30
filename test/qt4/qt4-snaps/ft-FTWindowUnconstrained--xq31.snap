@@ -1,0 +1,18 @@
+[
+  {
+    "testCase": "unconstrained-examples-362-4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "unconstrained-examples-362-5",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTWindow-unconstrained-complexwords3",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTWindow-unconstrained-complexwords4",
+    "outcome": "parse-failed"
+  }
+]

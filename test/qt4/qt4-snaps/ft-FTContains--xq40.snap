@@ -1,0 +1,38 @@
+[
+  {
+    "testCase": "FTContains-1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTContains-pred1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTContains-predcomp1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTContains-where1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTContains-wherecomp1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTContains-comp1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTContains-comp2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTContains-badcomp1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ftstaticcontext-q3",
+    "outcome": "parse-failed"
+  }
+]

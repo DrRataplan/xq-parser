@@ -162,5 +162,33 @@
   {
     "testCase": "path112",
     "outcome": "parse-failed"
+  },
+  {
+    "testCase": "path113",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "path114",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "path115",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "path116",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "path117",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "path118",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "path119",
+    "outcome": "parse-failed"
   }
 ]

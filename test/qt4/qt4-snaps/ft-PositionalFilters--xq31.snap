@@ -1,0 +1,22 @@
+[
+  {
+    "testCase": "FTPosFilter-q1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTPosFilter-q2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTPosFilter-q2a",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTPosFilter-q3",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTPosFilter-q4",
+    "outcome": "parse-failed"
+  }
+]

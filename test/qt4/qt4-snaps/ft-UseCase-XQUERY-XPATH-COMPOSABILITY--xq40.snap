@@ -1,0 +1,38 @@
+[
+  {
+    "testCase": "xquery-xpath-composability-queries-results-q1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "xquery-xpath-composability-queries-results-q2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "xquery-xpath-composability-queries-results-q3",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "xquery-xpath-composability-queries-results-q4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "xquery-xpath-composability-queries-results-q6",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "xquery-xpath-composability-queries-results-q7",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "xquery-xpath-composability-queries-results-q8",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "xquery-xpath-composability-queries-results-q9",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "xquery-xpath-composability-queries-results-q9b",
+    "outcome": "parse-failed"
+  }
+]

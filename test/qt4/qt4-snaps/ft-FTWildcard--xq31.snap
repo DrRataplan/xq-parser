@@ -1,0 +1,74 @@
+[
+  {
+    "testCase": "ft-3.4.2-expressions-q1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.2-expressions-q3",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.2-expressions-q4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.2-expressions-q6",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.2-expressions-q7",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.2-expressions-q8",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.2-expressions-q9",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.2-expressions-q10",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.2-expressions-q11",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.2-expressions-q12",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.2-expressions-q13",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.2-expressions-q14",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.2-expressions-q15",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.2-expressions-q16",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.2-expressions-q17",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.2-expressions-q18",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.2-expressions-q19",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.2-expressions-q20",
+    "outcome": "parse-failed"
+  }
+]

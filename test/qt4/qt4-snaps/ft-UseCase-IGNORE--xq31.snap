@@ -1,0 +1,34 @@
+[
+  {
+    "testCase": "ignore-queries-results-q1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ignore-queries-results-q1b",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ignore-queries-results-q2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ignore-queries-results-q2b",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ignore-queries-results-q3",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ignore-queries-results-q3b",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ignore-queries-results-q4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ignore-queries-results-q4b",
+    "outcome": "parse-failed"
+  }
+]

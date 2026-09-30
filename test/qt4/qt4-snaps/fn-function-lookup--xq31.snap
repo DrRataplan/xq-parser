@@ -2,5 +2,17 @@
   {
     "testCase": "fn-function-lookup-616",
     "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-function-lookup-902",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-function-lookup-903",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-function-lookup-904",
+    "outcome": "parse-failed"
   }
 ]
