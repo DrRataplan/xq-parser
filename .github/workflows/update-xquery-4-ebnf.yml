@@ -1,6 +1,8 @@
 # Syncs the XQuery 4.0 EBNF grammar from the upstream REx sample grammars,
 # applies XQUF and eXist-DB mutations, regenerates the TypeScript parser with
-# REx, and opens a pull request with the result.
+# REx, and refreshes the QT4 snapshots. If nothing changed it does nothing; if
+# there are no new failures it pushes straight to main; otherwise it creates (or
+# updates, dependabot-style) a single PR on the fixed branch chore/update-parser.
 # Runs weekly (Mondays 06:00 UTC) and can be triggered manually.
 name: Sync XQuery 4.0 grammar from upstream
 
@@ -19,6 +21,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      with:
+        submodules: true
     - name: Use Node.js latest
       uses: actions/setup-node@v4
       with:
@@ -30,37 +34,11 @@ jobs:
     - name: Apply changes on XQuery 4 grammar
       run: node --experimental-strip-types ./src/index.ts ./rawgrammars/XQuery-40.ebnf > transformedgrammars/XQuery-40-full.ebnf
 
-    - name: Detect changes to grammar
-      id: has-changes
-      run: |
-        if git diff-files --quiet ./transformedgrammars/XQuery-40-full.ebnf ./rawgrammars/XQuery-40.ebnf; then
-          echo "has-diff=false" >> $GITHUB_OUTPUT
-        else
-          echo "has-diff=true" >> $GITHUB_OUTPUT
-        fi
-
-    - name: Stop if the result is the same
-      if: steps.has-changes.outputs.has-diff == 'false'
-      run: |
-        gh run cancel ${{ github.run_id }}
-        gh run watch ${{ github.run_id }}
-      env:
-        GH_TOKEN: ${{ github.token }}
-
-    - name: Add the new grammar changes
-      run: |
-        git add ./transformedgrammars/XQuery-40-full.ebnf
-        git add ./rawgrammars/XQuery-40.ebnf
-
     - name: Install REx parser
       run: |
         git clone https://github.com/GuntherRademacher/rex-parser-generator.git
         cd rex-parser-generator
         rex/scripts/build-gpp.sh
-        ls rex/build/bin
-
-    - run: pwd
-    - run: ls rex-parser-generator/rex/build/bin
 
     - name: Run REx parser to make the new parser
       run: |
@@ -68,24 +46,60 @@ jobs:
         cat parser_header.txt ./XQuery-40-full.ts > parsers/XQuery-40-full.ts
         rm ./XQuery-40-full.ts
 
-    - name: Stage generated parser
-      run: git add ./parsers/XQuery-40-full.ts
-
-    - name: Make a branch and commit
+    - name: Detect changes
+      id: changes
       run: |
-        BRANCH_NAME=feat/update-parser-`date +"%d-%m-%y"`
+        if [ -z "$(git status --porcelain -- parsers rawgrammars transformedgrammars)" ]; then
+          echo "changed=false" >> $GITHUB_OUTPUT
+        else
+          echo "changed=true" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Refresh QT4 snapshots
+      if: steps.changes.outputs.changed == 'true'
+      run: QT4_TESTS_DIR=qt4tests npm run update-snapshots
+
+    - name: Check for new failures
+      id: failures
+      if: steps.changes.outputs.changed == 'true'
+      run: |
+        clean=true
+        node scripts/new-failures.mjs || clean=false
+        # Any other snapshot (e.g. smoke tests) changing also counts as a failure
+        if ! git diff --quiet -- test ':!test/qt4/qt4-snaps'; then
+          echo "Non-QT4 snapshots changed"
+          clean=false
+        fi
+        echo "clean=$clean" >> $GITHUB_OUTPUT
+
+    - name: Commit
+      if: steps.changes.outputs.changed == 'true'
+      run: |
         git config --global user.email "bot@elliat.nl"
         git config --global user.name "Bot"
-        git checkout -b $BRANCH_NAME
+        git add -A parsers rawgrammars transformedgrammars test
         git commit -m "feat(parser): update parser to the newest spec"
-        git push origin -u $BRANCH_NAME
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
 
-    - name: Create pull request
+    - name: Push directly to main (no new failures)
+      if: steps.changes.outputs.changed == 'true' && steps.failures.outputs.clean == 'true'
       run: |
-        gh pr create \
-          --title "feat(parser): update XQ40 parser to latest spec" \
-          --body "Automated update of the XQuery 4.0 grammar and generated parser."
+        git push origin HEAD:main
+        # An open update PR is now obsolete
+        if [ -n "$(gh pr list --head chore/update-parser --json number --jq '.[0].number')" ]; then
+          gh pr close chore/update-parser --delete-branch --comment "Superseded: the latest update had no new failures and was pushed directly to main."
+        fi
+      env:
+        GH_TOKEN: ${{ github.token }}
+
+    - name: Create or update PR (new failures)
+      if: steps.changes.outputs.changed == 'true' && steps.failures.outputs.clean != 'true'
+      run: |
+        BRANCH=chore/update-parser
+        git push --force origin HEAD:refs/heads/$BRANCH
+        if [ -z "$(gh pr list --head $BRANCH --json number --jq '.[0].number')" ]; then
+          gh pr create --head $BRANCH --base main \
+            --title "feat(parser): update XQ40 parser to latest spec" \
+            --body "Automated update of the XQuery 4.0 grammar and generated parser. This update introduces new QT4 failures; see the check output."
+        fi
       env:
         GH_TOKEN: ${{ github.token }}
