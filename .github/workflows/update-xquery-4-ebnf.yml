@@ -85,8 +85,9 @@ jobs:
       run: |
         git push origin HEAD:main
         # An open update PR is now obsolete
-        if [ -n "$(gh pr list --head chore/update-parser --json number --jq '.[0].number')" ]; then
-          gh pr close chore/update-parser --delete-branch --comment "Superseded: the latest update had no new failures and was pushed directly to main."
+        OPEN=$(gh pr list --state open --json number,title --jq '[.[] | select(.title | startswith("feat(parser): update XQ40 parser"))][0].number')
+        if [ -n "$OPEN" ]; then
+          gh pr close "$OPEN" --delete-branch --comment "Superseded: the latest update had no new failures and was pushed directly to main."
         fi
       env:
         GH_TOKEN: ${{ github.token }}
@@ -94,9 +95,11 @@ jobs:
     - name: Create or update PR (new failures)
       if: steps.changes.outputs.changed == 'true' && steps.failures.outputs.clean != 'true'
       run: |
-        BRANCH=chore/update-parser
+        # Amend whatever update PR is already open (dependabot-style), else start one
+        EXISTING=$(gh pr list --state open --json number,title,headRefName --jq '[.[] | select(.title | startswith("feat(parser): update XQ40 parser"))][0]')
+        BRANCH=$(echo "$EXISTING" | jq -r '.headRefName // "chore/update-parser"')
         git push --force origin HEAD:refs/heads/$BRANCH
-        if [ -z "$(gh pr list --head $BRANCH --json number --jq '.[0].number')" ]; then
+        if [ "$EXISTING" = "null" ] || [ -z "$EXISTING" ]; then
           gh pr create --head $BRANCH --base main \
             --title "feat(parser): update XQ40 parser to latest spec" \
             --body "Automated update of the XQuery 4.0 grammar and generated parser. This update introduces new QT4 failures; see the check output."

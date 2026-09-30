@@ -82,8 +82,9 @@ jobs:
         run: |
           git push origin HEAD:main
           # An open update PR is now obsolete
-          if [ -n "$(gh pr list --head chore/update-qt4tests --json number --jq '.[0].number')" ]; then
-            gh pr close chore/update-qt4tests --delete-branch --comment "Superseded: the latest update had no new failures and was pushed directly to main."
+          OPEN=$(gh pr list --state open --json number,title --jq '[.[] | select(.title | startswith("chore: update QT4 testset"))][0].number')
+          if [ -n "$OPEN" ]; then
+            gh pr close "$OPEN" --delete-branch --comment "Superseded: the latest update had no new failures and was pushed directly to main."
           fi
 
       - name: Create or update PR (new failures)
@@ -93,10 +94,12 @@ jobs:
         run: |
           SHORT="${{ steps.latest.outputs.sha }}"
           SHORT="${SHORT:0:7}"
-          BRANCH=chore/update-qt4tests
+          # Amend whatever update PR is already open (dependabot-style), else start one
+          EXISTING_PR=$(gh pr list --state open --json number,title,headRefName --jq '[.[] | select(.title | startswith("chore: update QT4 testset"))][0]')
+          BRANCH=$(echo "$EXISTING_PR" | jq -r '.headRefName // "chore/update-qt4tests"')
           git push --force origin HEAD:refs/heads/$BRANCH
           BODY="Updates qt4tests submodule to [\`${SHORT}\`](https://github.com/qt4cg/qt4tests/commit/${{ steps.latest.outputs.sha }}). This update introduces new failures."
-          EXISTING=$(gh pr list --head "$BRANCH" --json number --jq '.[0].number')
+          EXISTING=$(echo "$EXISTING_PR" | jq -r '.number // empty')
           if [ -z "$EXISTING" ]; then
             gh pr create --head "$BRANCH" --base main --title "chore: update QT4 testset to ${SHORT}" --body "$BODY"
           else
