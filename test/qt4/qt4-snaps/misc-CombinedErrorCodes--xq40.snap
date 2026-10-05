@@ -1,7 +1,1 @@
-[
-  {
-    "testCase": "typeswitch-in-xpath",
-    "outcome": "parse-succeeded",
-    "expectedCode": "XPST0003"
-  }
-]
+[]

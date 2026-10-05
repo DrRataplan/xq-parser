@@ -1,0 +1,14 @@
+[
+  {
+    "testCase": "other-queries-results-q1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "other-queries-results-q1b",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "other-queries-results-q2",
+    "outcome": "parse-failed"
+  }
+]

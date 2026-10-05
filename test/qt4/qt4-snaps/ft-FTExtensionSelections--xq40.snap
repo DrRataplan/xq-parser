@@ -1,0 +1,10 @@
+[
+  {
+    "testCase": "FTExtension-Opt-q1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTExtension-Opt-q6",
+    "outcome": "parse-failed"
+  }
+]

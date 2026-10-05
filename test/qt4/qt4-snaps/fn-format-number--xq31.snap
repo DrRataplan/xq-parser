@@ -67,5 +67,41 @@
   {
     "testCase": "numberformat-554",
     "outcome": "parse-failed"
+  },
+  {
+    "testCase": "numberformat-556",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "numberformat-557",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "numberformat-558",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "numberformat-559",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "numberformat-560",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "numberformat-561",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "numberformat-562",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "numberformat-563",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "numberformat-564",
+    "outcome": "parse-failed"
   }
 ]

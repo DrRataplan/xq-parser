@@ -1,0 +1,42 @@
+[
+  {
+    "testCase": "ForScoreExpr-unconstrained-1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ForScoreExpr-unconstrained-2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ForScoreExpr-unconstrained-3",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ForScoreExpr-unconstrained-4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ForScoreExpr-unconstrained-5",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ForScoreExpr-unconstrained-Var1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ForScoreExpr-unconstrained-Var2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ForScoreExpr-unconstrained-Var3",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "LetScoreExpr-unconstrained-1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "LetScoreExpr-unconstrained-3",
+    "outcome": "parse-failed"
+  }
+]

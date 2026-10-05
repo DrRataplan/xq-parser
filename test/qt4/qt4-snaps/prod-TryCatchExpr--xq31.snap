@@ -46,5 +46,65 @@
   {
     "testCase": "try-finally-012",
     "outcome": "parse-failed"
+  },
+  {
+    "testCase": "try-finally-013",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "try-finally-014",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "try-finally-015",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "try-finally-016",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "try-finally-017",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "try-finally-018",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "try-finally-019",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "try-finally-020",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "try-finally-024",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "try-finally-025",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "try-finally-026",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "try-finally-027",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "try-finally-028",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "try-finally-029",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "try-finally-030",
+    "outcome": "parse-failed"
   }
 ]

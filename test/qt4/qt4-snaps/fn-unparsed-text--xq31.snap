@@ -40,6 +40,18 @@
     "outcome": "parse-failed"
   },
   {
+    "testCase": "fn-unparsed-text-40-015",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-unparsed-text-40-016",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-unparsed-text-40-018",
+    "outcome": "parse-failed"
+  },
+  {
     "testCase": "fn-unparsed-text-bom-003",
     "outcome": "parse-failed"
   },

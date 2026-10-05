@@ -1,0 +1,26 @@
+[
+  {
+    "testCase": "ft-3.4.3-expressions-q1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.3-expressions-q2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.3-expressions-q3",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.3-expressions-q4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.3-expressions-q5",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-3.4.3-expressions-q6",
+    "outcome": "parse-failed"
+  }
+]

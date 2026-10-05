@@ -46,5 +46,9 @@
   {
     "testCase": "MapType-092",
     "outcome": "parse-failed"
+  },
+  {
+    "testCase": "MapType-101",
+    "outcome": "parse-failed"
   }
 ]

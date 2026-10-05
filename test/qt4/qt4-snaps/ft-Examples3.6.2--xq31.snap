@@ -1,0 +1,18 @@
+[
+  {
+    "testCase": "examples-362-1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "examples-362-2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "examples-362-3",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "examples-362-3a",
+    "outcome": "parse-failed"
+  }
+]

@@ -22,5 +22,13 @@
   {
     "testCase": "K2-ComputeConElem-24",
     "outcome": "parse-failed"
+  },
+  {
+    "testCase": "K2-ComputeConElem-28",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Constr-compelem-compname-28",
+    "outcome": "parse-failed"
   }
 ]

@@ -1,0 +1,82 @@
+[
+  {
+    "testCase": "FTSelection-FTTimes-unconstrained-q1a",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-FTTimes-unconstrained-q1b",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-FTTimes-unconstrained-q1c",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-FTTimes-unconstrained-q1d",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-FTTimes-unconstrained-q1e",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-FTTimes-unconstrained-q2a",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-FTTimes-unconstrained-q2b",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-FTTimes-unconstrained-q2c",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-FTTimes-unconstrained-q2d",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-FTTimes-unconstrained-q2e",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-FTTimes-unconstrained-q3a",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-FTTimes-unconstrained-q3b",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-FTTimes-unconstrained-q3c",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-FTTimes-unconstrained-q3d",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-FTTimes-unconstrained-q3e",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-FTTimes-unconstrained-q4a",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-FTTimes-unconstrained-q4b",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-FTTimes-unconstrained-q4c",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-FTTimes-unconstrained-q4d",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTSelection-FTTimes-unconstrained-q4e",
+    "outcome": "parse-failed"
+  }
+]

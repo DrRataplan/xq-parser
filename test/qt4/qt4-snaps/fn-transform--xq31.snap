@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "testCase": "fn-transform-404",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-transform-405",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-transform-406",
+    "outcome": "parse-failed"
+  }
+]

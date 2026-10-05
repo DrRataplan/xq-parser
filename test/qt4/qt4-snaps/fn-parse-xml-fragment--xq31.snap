@@ -20,7 +20,27 @@
     "outcome": "parse-failed"
   },
   {
+    "testCase": "parse-xml-fragment-423",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "parse-xml-fragment-424",
+    "outcome": "parse-failed"
+  },
+  {
     "testCase": "parse-xml-fragment-502",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "parse-xml-fragment-505",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "parse-xml-fragment-506",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "parse-xml-fragment-507",
     "outcome": "parse-failed"
   }
 ]

@@ -1,9 +1,5 @@
 [
   {
-    "testCase": "WhileExpr021",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "cbcl-while-hash-join-005",
     "outcome": "parse-failed"
   },

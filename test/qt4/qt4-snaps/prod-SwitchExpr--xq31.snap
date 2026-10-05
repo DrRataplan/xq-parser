@@ -18,5 +18,61 @@
   {
     "testCase": "switch-408",
     "outcome": "parse-failed"
+  },
+  {
+    "testCase": "switch-910",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "switch-911",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "switch-912",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "switch-913",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "switch-914",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "switch-915",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "switch-916",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "switch-917",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "switch-919",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "switch-920",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "switch-923",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "switch-924",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "switch-925",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "switch-926",
+    "outcome": "parse-failed"
   }
 ]
