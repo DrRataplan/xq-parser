@@ -1,0 +1,50 @@
+[
+  {
+    "testCase": "ft-5.2.11-examples-q1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-5.2.11-examples-q2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-5.2.11examples-q3",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-5.2.11-examples-q4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-5.2.11-examples-q5",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-5.2.11-expressions-q1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-5.2.11-expressions-q2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-5.2.11-expressions-q3",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-5.2.11-expressions-q4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-5.2.11-expressions-q7",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-5.2.11-expressions-q8",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-5.2.11-expressions-q9",
+    "outcome": "parse-failed"
+  }
+]

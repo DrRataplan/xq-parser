@@ -7,5 +7,45 @@
   {
     "testCase": "typeswitch-40-001",
     "outcome": "parse-failed"
+  },
+  {
+    "testCase": "typeswitch-40-002",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "typeswitch-40-003",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "typeswitch-40-004",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "typeswitch-40-005",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "typeswitch-40-006",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "typeswitch-40-011",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "typeswitch-40-012",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "typeswitch-40-013",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "typeswitch-40-014",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "typeswitch-40-015",
+    "outcome": "parse-failed"
   }
 ]

@@ -1,7 +1,1 @@
-[
-  {
-    "testCase": "lambda-fn-006",
-    "outcome": "parse-succeeded",
-    "expectedCode": "XPST0003"
-  }
-]
+[]

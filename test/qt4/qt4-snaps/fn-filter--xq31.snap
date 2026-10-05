@@ -1,9 +1,5 @@
 [
   {
-    "testCase": "fn-filter-026",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "fn-filter-403",
     "outcome": "parse-failed"
   },

@@ -22,5 +22,29 @@
   {
     "testCase": "map-merge-408",
     "outcome": "parse-failed"
+  },
+  {
+    "testCase": "map-merge-409",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "map-merge-410",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "map-merge-411",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "map-merge-412",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "map-merge-413",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "map-merge-414",
+    "outcome": "parse-failed"
   }
 ]

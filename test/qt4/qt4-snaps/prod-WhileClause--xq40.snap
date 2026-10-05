@@ -1,12 +1,1 @@
-[
-  {
-    "testCase": "WhileExpr020",
-    "outcome": "parse-succeeded",
-    "expectedCode": "XPST0003"
-  },
-  {
-    "testCase": "K2-WhileExpr-1",
-    "outcome": "parse-succeeded",
-    "expectedCode": "XPST0003"
-  }
-]
+[]

@@ -1,7 +1,1 @@
-[
-  {
-    "testCase": "preceding-sibling-or-self-39",
-    "outcome": "parse-succeeded",
-    "expectedCode": "XPST0003"
-  }
-]
+[]

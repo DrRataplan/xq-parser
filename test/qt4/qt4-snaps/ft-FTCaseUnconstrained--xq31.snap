@@ -1,0 +1,18 @@
+[
+  {
+    "testCase": "ft-5.2.10-examples-q1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-5.2.10-expressions-q1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-5.2.10-expressions-q2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "ft-5.2.10-expressions-q3",
+    "outcome": "parse-failed"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "testCase": "FTIgnore-unconstrained-q1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTIgnore-unconstrained-q2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTIgnore-unconstrained-q3",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTIgnore-unconstrained-q4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTIgnore-unconstrained-q5",
+    "outcome": "parse-failed"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "testCase": "FTWindow-words1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTWindow-words2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTWindow-words3",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTWindow-words4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTWindow-complexwords1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTWindow-complexwords2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTWindow-badwords2",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTWindow-badwords3",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTWindow-badwords4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "FTWindow-badwords5",
+    "outcome": "parse-failed"
+  }
+]

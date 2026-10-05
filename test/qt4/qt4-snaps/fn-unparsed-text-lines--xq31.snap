@@ -14,5 +14,9 @@
   {
     "testCase": "fn-unparsed-text-lines-40-014",
     "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-unparsed-text-lines-40-015",
+    "outcome": "parse-failed"
   }
 ]
