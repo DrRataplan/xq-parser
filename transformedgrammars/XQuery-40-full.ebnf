@@ -260,7 +260,7 @@ ParamListWithDefaults ::= ParamWithDefault ( ',' ParamWithDefault ) *
 ParamWithDefault ::= VarNameAndType ( ':=' ExprSingle ) ?
 ItemTypeDecl ::= 'declare' Annotation * 'type' EQName 'as' ItemType
 NominativeRecordTypeDecl ::= 'declare' Annotation * 'record' EQName '(' ( ExtendedFieldDeclaration ( ',' ExtendedFieldDeclaration ) * ) ? ')'
-ExtendedFieldDeclaration ::= FieldDeclaration ( ':=' ExprSingle ) ?
+ExtendedFieldDeclaration ::= '%static' ? FieldDeclaration ( ':=' ExprSingle ) ?
 OptionDecl ::= 'declare' 'option' EQName StringLiteral
 MainModule ::= Prolog QueryBody
 QueryBody ::= Expr
