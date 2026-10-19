@@ -1,5 +1,5 @@
 // @ts-nocheck
-// This file was generated on Mon Oct 12, 2026 14:18 (UTC) by REx v6.3-SNAPSHOT which is Copyright (c) 1979-2026 by Gunther Rademacher <grd@gmx.net>
+// This file was generated on Mon Oct 19, 2026 11:59 (UTC) by REx v6.3-SNAPSHOT which is Copyright (c) 1979-2026 by Gunther Rademacher <grd@gmx.net>
 // REx command line: -typescript ./transformedgrammars/XQuery-40-full.ebnf -glalr 1 -a pi -tree
 
                                                             // line 1 "./transformedgrammars/XQuery-40-full.ebnf"
@@ -5876,6 +5876,7 @@
       return lhs == rhs;
     }
 
+
     private lookback(x: number, y: number)
     {
       var i = Parser.LOOKBACK[y];
@@ -5910,7 +5911,6 @@
       }
       return count;
     }
-
   }
 
   class DeferredEvent
