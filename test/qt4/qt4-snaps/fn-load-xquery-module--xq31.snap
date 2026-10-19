@@ -20,19 +20,7 @@
     "outcome": "parse-failed"
   },
   {
-    "testCase": "fn-load-xquery-module-922",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-load-xquery-module-923",
-    "outcome": "parse-failed"
-  },
-  {
     "testCase": "fn-load-xquery-module-924",
-    "outcome": "parse-failed"
-  },
-  {
-    "testCase": "fn-load-xquery-module-925",
     "outcome": "parse-failed"
   },
   {
@@ -49,6 +37,134 @@
   },
   {
     "testCase": "fn-load-xquery-module-406",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-501",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-502",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-503",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-504",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-505",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-506",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-507",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-509",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-510",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-511",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-512",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-514",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-515",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-516",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-517",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-518",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-519",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-520",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-521",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-522",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-523",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-928",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-930",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-931",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-932",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-933",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-934",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-935",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-936",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-937",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-938",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-load-xquery-module-939",
     "outcome": "parse-failed"
   }
 ]
