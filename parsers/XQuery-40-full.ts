@@ -1,5 +1,5 @@
 // @ts-nocheck
-// This file was generated on Mon Oct 19, 2026 11:59 (UTC) by REx v6.3-SNAPSHOT which is Copyright (c) 1979-2026 by Gunther Rademacher <grd@gmx.net>
+// This file was generated on Mon Oct 26, 2026 12:11 (UTC) by REx v6.3-SNAPSHOT which is Copyright (c) 1979-2026 by Gunther Rademacher <grd@gmx.net>
 // REx command line: -typescript ./transformedgrammars/XQuery-40-full.ebnf -glalr 1 -a pi -tree
 
                                                             // line 1 "./transformedgrammars/XQuery-40-full.ebnf"
@@ -6216,6 +6216,10 @@
         else
         {
           nonterminalId = reduce;
+          if (this.l1 == 0)
+          {
+            this.b1 = this.e0;
+          }
           if (symbols > 0)
           {
             for (var i = 1; i < symbols; i++)
@@ -6601,5 +6605,5 @@
 
                                                             // line 362 "./transformedgrammars/XQuery-40-full.ebnf"
 
-                                                            // line 6604 "XQuery-40-full.ts"
+                                                            // line 6608 "XQuery-40-full.ts"
 // End
