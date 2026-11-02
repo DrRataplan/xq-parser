@@ -20,6 +20,14 @@
     "outcome": "parse-failed"
   },
   {
+    "testCase": "switch-410",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "switch-412",
+    "outcome": "parse-failed"
+  },
+  {
     "testCase": "switch-910",
     "outcome": "parse-failed"
   },

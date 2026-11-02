@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "testCase": "fn-uri-collection-1a",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "uri-collection-010",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "uri-collection-012",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "uri-collection-013",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "uri-collection-014",
+    "outcome": "parse-failed"
+  }
+]
