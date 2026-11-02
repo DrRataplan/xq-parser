@@ -4,6 +4,18 @@
     "outcome": "parse-failed"
   },
   {
+    "testCase": "fn-function-lookup-617",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-function-lookup-618",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-function-lookup-619",
+    "outcome": "parse-failed"
+  },
+  {
     "testCase": "fn-function-lookup-902",
     "outcome": "parse-failed"
   },

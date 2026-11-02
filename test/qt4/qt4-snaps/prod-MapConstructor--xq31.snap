@@ -151,5 +151,17 @@
   {
     "testCase": "MapConstructor-506",
     "outcome": "parse-failed"
+  },
+  {
+    "testCase": "MapConstructor-510",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "MapConstructor-511",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "MapConstructor-512",
+    "outcome": "parse-failed"
   }
 ]
