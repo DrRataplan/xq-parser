@@ -1,5 +1,5 @@
 // @ts-nocheck
-// This file was generated on Mon Oct 26, 2026 12:11 (UTC) by REx v6.3-SNAPSHOT which is Copyright (c) 1979-2026 by Gunther Rademacher <grd@gmx.net>
+// This file was generated on Mon Nov 2, 2026 14:40 (UTC) by REx v6.3-SNAPSHOT which is Copyright (c) 1979-2026 by Gunther Rademacher <grd@gmx.net>
 // REx command line: -typescript ./transformedgrammars/XQuery-40-full.ebnf -glalr 1 -a pi -tree
 
                                                             // line 1 "./transformedgrammars/XQuery-40-full.ebnf"
@@ -5807,7 +5807,7 @@
       "ParamListWithDefaults",
       "ParamWithDefault",
       "ItemTypeDecl",
-      "NominativeRecordTypeDecl",
+      "LabeledRecordTypeDecl",
       "ExtendedFieldDeclaration",
       "OptionDecl",
       "MainModule",
@@ -6140,6 +6140,7 @@
         var shift = -1;
         var reduce = -1;
         var symbols = -1;
+        var pos = -1;
         switch (this.action & 7)
         {
         case 1: // SHIFT
@@ -6198,18 +6199,19 @@
               }
             }
             this.es = this.e1;
-            this.stack = new StackNode(this.state, lookback, this.b1, this.stack);
+            pos = this.b1;
             this.consume(this.l1);
           }
           else
           {
-            this.stack = new StackNode(this.state, lookback, this.bs, this.stack);
+            pos = this.bs;
           }
-          this.state = shift;
         }
 
         if (reduce < 0)
         {
+          this.stack = new StackNode(this.state, lookback, pos, this.stack);
+          this.state = shift;
           this.action = this.predict(this.state);
           return Parser.PARSING;
         }
@@ -6222,13 +6224,25 @@
           }
           if (symbols > 0)
           {
-            for (var i = 1; i < symbols; i++)
+            var n = symbols;
+            if (shift >= 0)
             {
+              n -= 1;
+            }
+            if (n > 0)
+            {
+              for (var i = 1; i < n; i++)
+              {
+                this.stack = this.stack.link!;
+              }
+              this.state = this.stack.state;
+              this.bs = this.stack.pos;
               this.stack = this.stack.link!;
             }
-            this.state = this.stack.state;
-            this.bs = this.stack.pos;
-            this.stack = this.stack.link!;
+            else
+            {
+              this.bs = pos;
+            }
           }
           else
           {
@@ -6605,5 +6619,5 @@
 
                                                             // line 362 "./transformedgrammars/XQuery-40-full.ebnf"
 
-                                                            // line 6608 "XQuery-40-full.ts"
+                                                            // line 6622 "XQuery-40-full.ts"
 // End
