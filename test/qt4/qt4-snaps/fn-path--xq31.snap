@@ -120,6 +120,14 @@
     "outcome": "parse-failed"
   },
   {
+    "testCase": "path070",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "path071",
+    "outcome": "parse-failed"
+  },
+  {
     "testCase": "path101",
     "outcome": "parse-failed"
   },
