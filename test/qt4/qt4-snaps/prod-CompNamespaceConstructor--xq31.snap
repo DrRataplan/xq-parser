@@ -10,5 +10,13 @@
   {
     "testCase": "nscons-048",
     "outcome": "parse-failed"
+  },
+  {
+    "testCase": "nscons-050",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "nscons-051",
+    "outcome": "parse-failed"
   }
 ]

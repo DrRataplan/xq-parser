@@ -201,6 +201,86 @@
     "outcome": "parse-failed"
   },
   {
+    "testCase": "function-decl-40-040",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-041",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-042",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-043",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-044",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-045",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-046",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-047",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-048",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-049",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-050",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-051",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-052",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-053",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-054",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-055",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-056",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-060",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-061",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-062",
+    "outcome": "parse-failed"
+  },
+  {
     "testCase": "function-decl-40-901",
     "outcome": "parse-failed"
   },
@@ -246,6 +326,18 @@
   },
   {
     "testCase": "function-decl-40-914",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-915",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-916",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "function-decl-40-917",
     "outcome": "parse-failed"
   }
 ]
