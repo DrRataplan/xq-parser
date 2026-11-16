@@ -54,5 +54,45 @@
   {
     "testCase": "id-function-declaration-104",
     "outcome": "parse-failed"
+  },
+  {
+    "testCase": "id-function-declaration-110",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "id-function-declaration-111",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "id-function-declaration-112",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "id-function-declaration-113",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "id-function-declaration-114",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "id-function-declaration-115",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "id-function-declaration-116",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "id-function-declaration-117",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "id-function-declaration-118",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "id-function-declaration-119",
+    "outcome": "parse-failed"
   }
 ]

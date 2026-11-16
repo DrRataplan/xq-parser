@@ -1,0 +1,94 @@
+[
+  {
+    "testCase": "upd-try-catch-expr-001",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-002",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-003",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-004",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-005",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-006",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-007",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-008",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-009",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-010",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-011",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-012",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-013",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-014",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-016",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-017",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-018",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-019",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-020",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-031",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-032",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-033",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-try-catch-expr-034",
+    "outcome": "parse-failed"
+  }
+]

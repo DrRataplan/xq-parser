@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "testCase": "nscons-053",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "nscons-054",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "nscons-055",
+    "outcome": "parse-failed"
+  }
+]
