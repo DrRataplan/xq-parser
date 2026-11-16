@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "testCase": "id-flwor-expr-030",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "id-flwor-expr-031",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "id-flwor-expr-032",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "id-flwor-expr-033",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "id-flwor-expr-034",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "id-flwor-expr-035",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "id-flwor-expr-036",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "id-flwor-expr-037",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "id-flwor-expr-038",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "id-flwor-expr-039",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "id-flwor-expr-040",
+    "outcome": "parse-failed"
+  }
+]

@@ -1,1 +1,166 @@
-[]
+[
+  {
+    "testCase": "recordTypeDecl-002",
+    "outcome": "parse-succeeded",
+    "expectedCode": "XPST0003"
+  },
+  {
+    "testCase": "recordTypeDecl-023",
+    "outcome": "parse-succeeded",
+    "expectedCode": "XPST0003"
+  },
+  {
+    "testCase": "recordTypeDecl-024",
+    "outcome": "parse-succeeded",
+    "expectedCode": "XPST0003"
+  },
+  {
+    "testCase": "recordTypeDecl-025",
+    "outcome": "parse-succeeded",
+    "expectedCode": "XPST0003"
+  },
+  {
+    "testCase": "recordTypeDecl-121",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-122",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-123",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-125",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-136",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-150",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-151",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-152",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-153",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-154",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-155",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-156",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-157",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-158",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-160",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-161",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-162",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-163",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-164",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-165",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-166",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-167",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-170",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-171",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-172",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-173",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-174",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-175",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-176",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-177",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-180",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-181",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-182",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-183",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-184",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "recordTypeDecl-190",
+    "outcome": "parse-failed"
+  }
+]

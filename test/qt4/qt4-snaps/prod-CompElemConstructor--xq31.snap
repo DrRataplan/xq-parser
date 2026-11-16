@@ -30,5 +30,10 @@
   {
     "testCase": "Constr-compelem-compname-28",
     "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Constr-compelem-compname-30",
+    "outcome": "parse-succeeded",
+    "expectedCode": "XPST0003"
   }
 ]

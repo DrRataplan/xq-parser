@@ -1,0 +1,46 @@
+[
+  {
+    "testCase": "upd-switch-expr-001",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-switch-expr-002",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-switch-expr-003",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-switch-expr-004",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-switch-expr-005",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-switch-expr-006",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-switch-expr-008",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-switch-expr-009",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-switch-expr-010",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-switch-expr-020",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-switch-expr-021",
+    "outcome": "parse-failed"
+  }
+]

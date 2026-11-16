@@ -1,1 +1,6 @@
-[]
+[
+  {
+    "testCase": "cast-record-910",
+    "outcome": "parse-failed"
+  }
+]
