@@ -103,5 +103,17 @@
   {
     "testCase": "numberformat-564",
     "outcome": "parse-failed"
+  },
+  {
+    "testCase": "numberformat-570",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "numberformat-571",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "numberformat-572",
+    "outcome": "parse-failed"
   }
 ]

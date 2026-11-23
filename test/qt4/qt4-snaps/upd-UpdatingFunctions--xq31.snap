@@ -1,0 +1,66 @@
+[
+  {
+    "testCase": "upd-updating-function-001",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-updating-function-002",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-updating-function-003",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-updating-function-004",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-updating-function-005",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-updating-function-006",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-updating-function-008",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-updating-function-011",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-updating-function-038",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-updating-function-039",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-updating-function-040",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-updating-function-041",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-updating-function-050",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-updating-function-053",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-updating-function-054",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-updating-function-060",
+    "outcome": "parse-failed"
+  }
+]

@@ -1,5 +1,13 @@
 [
   {
+    "testCase": "try-catch-map11",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "try-catch-map12",
+    "outcome": "parse-failed"
+  },
+  {
     "testCase": "try-finally-001",
     "outcome": "parse-failed"
   },

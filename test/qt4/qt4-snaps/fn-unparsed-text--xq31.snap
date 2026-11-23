@@ -62,5 +62,21 @@
   {
     "testCase": "fn-unparsed-text-bom-005",
     "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-unparsed-text-utf8-002",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-unparsed-text-utf8-003",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-unparsed-text-utf8-009",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "fn-unparsed-text-utf8-010",
+    "outcome": "parse-failed"
   }
 ]

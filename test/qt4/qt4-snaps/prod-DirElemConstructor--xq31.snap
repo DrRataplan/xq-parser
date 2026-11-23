@@ -3,5 +3,17 @@
     "testCase": "K2-DirectConElem-53",
     "outcome": "parse-succeeded",
     "expectedCode": "XPST0003"
+  },
+  {
+    "testCase": "Constr-direlem-jnode-1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Constr-direlem-jnode-4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Constr-direlem-jnode-5",
+    "outcome": "parse-failed"
   }
 ]

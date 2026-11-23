@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "testCase": "method-920",
+    "outcome": "parse-succeeded",
+    "expectedCode": "XPST0003"
+  }
+]

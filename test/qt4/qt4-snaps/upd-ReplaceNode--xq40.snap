@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "testCase": "id-replace-expr-055",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "id-replace-expr-056",
+    "outcome": "parse-failed"
+  }
+]

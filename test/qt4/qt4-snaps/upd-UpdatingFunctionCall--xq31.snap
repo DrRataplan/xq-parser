@@ -1,0 +1,114 @@
+[
+  {
+    "testCase": "upd-invoke-updating-001",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-002",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-003",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-004",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-005",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-006",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-007",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-008",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-009",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-010",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-011",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-012",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-013",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-014",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-016",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-017",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-018",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-020",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-030",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-034",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-035",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-036",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-037",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-038",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-039",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-040",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-041",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "upd-invoke-updating-042",
+    "outcome": "parse-failed"
+  }
+]
