@@ -1,5 +1,10 @@
 [
   {
+    "testCase": "itemTypeDecl-077",
+    "outcome": "parse-succeeded",
+    "expectedCode": "XPST0003"
+  },
+  {
     "testCase": "itemTypeDecl-078",
     "outcome": "parse-failed"
   },

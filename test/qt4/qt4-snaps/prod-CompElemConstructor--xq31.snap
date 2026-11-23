@@ -28,7 +28,36 @@
     "outcome": "parse-failed"
   },
   {
+    "testCase": "K2-ComputeConElem-29",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "K2-ComputeConElem-30",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "K2-ComputeConElem-31",
+    "outcome": "parse-failed"
+  },
+  {
     "testCase": "Constr-compelem-compname-28",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Constr-compelem-compname-30",
+    "outcome": "parse-succeeded",
+    "expectedCode": "XPST0003"
+  },
+  {
+    "testCase": "Constr-compelem-jnode-1",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Constr-compelem-jnode-4",
+    "outcome": "parse-failed"
+  },
+  {
+    "testCase": "Constr-compelem-jnode-6",
     "outcome": "parse-failed"
   }
 ]

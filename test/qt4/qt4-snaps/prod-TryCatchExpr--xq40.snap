@@ -1,1 +1,6 @@
-[]
+[
+  {
+    "testCase": "try-catch-map12",
+    "outcome": "parse-failed"
+  }
+]

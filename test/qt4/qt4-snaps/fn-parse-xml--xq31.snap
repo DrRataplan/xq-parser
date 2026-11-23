@@ -78,5 +78,9 @@
   {
     "testCase": "parse-xml-471",
     "outcome": "parse-failed"
+  },
+  {
+    "testCase": "parse-xml-510",
+    "outcome": "parse-failed"
   }
 ]
